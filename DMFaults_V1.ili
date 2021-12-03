@@ -94,10 +94,10 @@ VERSION "2021-11-30"  =
 	  Hierarchy : MANDATORY DMFaultsCatalogues_V1.Catalogues.FaultBasicHierRef;
 	  /** Name des übergeordneten Teilstörungssystems (TSS) 
 	  */
-	  Linked_TSS : TEXT; 
+	  /**Linked_TSS : TEXT; */
 	  /** Name des übergeordneten Gross-Störungssystems (TSS) 
 	  */
-	  Linked_GSS : TEXT;
+	  /**Linked_GSS : TEXT; */
 	  
 	  
 	  /** ORIGIN ATTRIBUTES
@@ -121,6 +121,21 @@ VERSION "2021-11-30"  =
     END FaultBasic;
 	
 	
+	CLASS Linked_TSS = 
+	  Linked_TSS_ID : MANDATORY TEXT; 
+	END Linked_TSS; 
+	
+	
+	CLASS Linked_GSS = 
+	  Linked_GSS_ID : MANDATORY TEXT; 
+	END Linked_GSS; 	
+	
+	
+	/**
+	CLASS Linked_S = 
+	  Linked_S_ID : MANDATORY TEXT; 
+	END Linked_S_ID; 
+	*/
 	
 	/** WEITERFÜHRENDE ATTRIBUTE des Modells Faults
     */
@@ -285,6 +300,26 @@ VERSION "2021-11-30"  =
 
     END GeometryType_Fault;
 	
+	
+	ASSOCIATION S_TSS = 
+	  FaultBasic -- {0..*} FaultBasic;
+	  Linked_TSS -- {0..*} Linked_TSS; 
+	 
+	END S_TSS; 
+	
+	
+	ASSOCIATION S_GSS = 
+	  FaultBasic -- {0..*} FaultBasic; 
+	  Linked_GSS -- {0..*} Linked_GSS; 
+	  
+	END S_GSS; 
+	
+	
+	ASSOCIATION TSS_GSS = 
+	  Linked_TSS -- {0..*} Linked_TSS; 
+	  Linked_GSS -- {0..*} Linked_GSS; 
+	  
+	END TSS_GSS;
 	
 
 
