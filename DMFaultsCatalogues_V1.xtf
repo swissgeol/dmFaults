@@ -2,25 +2,26 @@
 <TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
 	<HEADERSECTION SENDER="ili2gpkg-4.5.0-fc023c8d2d8cd44d792927e45dc80c1ad973f095" VERSION="2.3">
 		<MODELS>
+			<MODEL NAME="CatalogueObjects_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
+			<MODEL NAME="CatalogueObjectTrees_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
 			<MODEL NAME="InternationalCodes_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
 			<MODEL NAME="Localisation_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
 			<MODEL NAME="LocalisationCH_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
 			<MODEL NAME="Dictionaries_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
 			<MODEL NAME="DictionariesCH_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
-			<MODEL NAME="CatalogueObjectTrees_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
 			<MODEL NAME="DMFaultsCatalogues_V1" VERSION="2021-11-30" URI="mailto:U80863546@localhost"/>
 		</MODELS>
 	</HEADERSECTION>
 	<DATASECTION>
-		<DMFaultsCatalogues_V1.Catalogues BID="3">
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem TID="1316aa51-ff79-4e2d-aa0e-8812691bfd3e">
-				<IsSuperItem>true</IsSuperItem>
+		<DMFaultsCatalogues_V1.Catalogues BID="cad8385f-346f-42cc-8785-2777556eee51">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem TID="fa5f15a2-162c-4a15-8302-a0838777004b">
+				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>overthrust</Text>
+								<Text>Überschiebung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -30,19 +31,22 @@
 								<Language>fr</Language>
 								<Text>chevauchement</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>overthrust</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem TID="4f090761-aa69-40bb-89f7-14aa4f8cd71d">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem TID="83d40c92-3931-41a4-977a-b3bd90c4aa0c">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="1316aa51-ff79-4e2d-aa0e-8812691bfd3e"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>reverse fault</Text>
+								<Text>Aufschiebung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -52,19 +56,22 @@
 								<Language>fr</Language>
 								<Text>faille inverse</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>reverse fault</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem TID="5c66c1ce-19ca-427c-a542-2782ee8828ef">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem TID="d3752685-5cb4-4bda-9409-aa6d27e27f66">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="1316aa51-ff79-4e2d-aa0e-8812691bfd3e"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>normal fault</Text>
+								<Text>Abschiebung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -74,18 +81,22 @@
 								<Language>fr</Language>
 								<Text>faille normale</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>normal fault</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem TID="2a2b2d8c-2ab3-4f51-9050-e3332b672f61">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem TID="10a07201-fe5c-4f87-b998-30abd03cb5a7">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>strike-slip fault</Text>
+								<Text>Blattverschiebung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -95,18 +106,22 @@
 								<Language>fr</Language>
 								<Text>décrochement</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>strike-slip fault</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem TID="f65cce4a-fe69-4783-84df-d8bbf88010be">
-				<IsSuperItem>true</IsSuperItem>
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem TID="5c94c9cb-a9fb-49c9-b528-2163fea787df">
+				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>complex fault</Text>
+								<Text>Komplexe Störung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -116,19 +131,22 @@
 								<Language>fr</Language>
 								<Text>faille complexe</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>complex fault</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem TID="38eeb807-20dc-4e82-a682-978644b79ba6">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem TID="fef3eeb0-032d-4bfa-ba0e-a412c1451293">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="f65cce4a-fe69-4783-84df-d8bbf88010be"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>general fault</Text>
+								<Text>Störung im Allgemeinen</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -138,19 +156,22 @@
 								<Language>fr</Language>
 								<Text>faille générale</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>general fault</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicVertMovItem TID="3d92b0f1-386c-45b7-a3c9-5e0ae52370f8">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicVertMovItem TID="00129f25-3a4c-4d3c-9231-6415df5cec41">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="f65cce4a-fe69-4783-84df-d8bbf88010be"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>inverted</Text>
+								<Text>aufschiebend</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -158,21 +179,24 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>xxx</Text>
+								<Text>inverse</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>inverted</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicVertMovItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicVertMovItem TID="fc556805-b0d9-4c1b-97be-4fc0e71b6f5f">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicVertMovItem TID="49441f0b-f332-42fd-b1fd-8ff22e3b3f2d">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="f65cce4a-fe69-4783-84df-d8bbf88010be"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>normal</Text>
+								<Text>abschiebend</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -180,42 +204,49 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>xxx</Text>
+								<Text>normale</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>normal</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicVertMovItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicVertMovItem TID="efcaeb0c-5c02-46cb-8e69-6e31a8a38ca8">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicVertMovItem TID="0efba54d-d7d7-47f5-bc8c-3b967c5486a3">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="f65cce4a-fe69-4783-84df-d8bbf88010be"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>non-existent / negligible</Text>
+								<Text>nicht vorhanden/ vernachlässigbar</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
-								<Text>nicht vorhanden / vernachlässigbar</Text>
+								<Text>nicht vorhanden/ vernachlässigbar</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>inexistant / négligeable</Text>
+								<Text>inexistant/ négligable</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>non-existent/ negligble</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicVertMovItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicVertMovItem TID="6e9a3231-ab46-4d2c-90e6-3541e049846a">
-				<IsSuperItem>true</IsSuperItem>
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicVertMovItem TID="a1d0029e-0e26-4b32-883b-69a37be4caeb">
+				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>unknown</Text>
+								<Text>unbekannt</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -225,84 +256,97 @@
 								<Language>fr</Language>
 								<Text>inconnu</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>unknown</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicVertMovItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicHoriMovItem TID="a690a8db-ee3b-47f4-852f-5db1199894e0">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicHoriMovItem TID="3f4d039e-ff49-4fda-a079-11b705b9bf40">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="6e9a3231-ab46-4d2c-90e6-3541e049846a"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>shotpointmap</Text>
+								<Text>dextral </Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
-								<Text>Schusspunktkarte</Text>
+								<Text>dextral</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>carte de points de tir</Text>
+								<Text>dextre</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>dextral</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicHoriMovItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicHoriMovItem TID="395bcc0f-04b8-4eb1-9ffc-a04c7aa411fc">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicHoriMovItem TID="43372df9-ef8d-4662-b606-1e6bcb4f3f6d">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="6e9a3231-ab46-4d2c-90e6-3541e049846a"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>basemap</Text>
+								<Text>sinistral</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
-								<Text>Basemap</Text>
+								<Text>sinstral</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>plan de base</Text>
+								<Text>sénestre</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>sinistral</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicHoriMovItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicHoriMovItem TID="efcaeb0c-5c02-46cb-8e69-6e31a8a38ca8">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicHoriMovItem TID="1c83794e-6e37-4baa-915c-952077c363e0">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="f65cce4a-fe69-4783-84df-d8bbf88010be"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>non-existent / negligible</Text>
+								<Text>nicht vorhanden/ vernachlässigbar</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
-								<Text>nicht vorhanden / vernachlässigbar</Text>
+								<Text>nicht vorhanden/ vernachlässigbar</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>inexistant / négligeable</Text>
+								<Text>inexistant/ négligable</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>non-existent/ negligible</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicHoriMovItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicHoriMovItem TID="6e9a3231-ab46-4d2c-90e6-3541e049846a">
-				<IsSuperItem>true</IsSuperItem>
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicHoriMovItem TID="808bb942-27bd-49a8-ac4f-6390265f7743">
+				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>unknown</Text>
+								<Text>unbekannt</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -312,19 +356,22 @@
 								<Language>fr</Language>
 								<Text>inconnu</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>unknown</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
-			</DMFaultsCatalogues_V1.Catalogues.FaultBasicHoriMovItem>	
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicLimTecBodyItem TID="3a8785a8-6841-4b63-b2a0-ceedf3012da0">
+			</DMFaultsCatalogues_V1.Catalogues.FaultBasicHoriMovItem>
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicLimTecBodyItem TID="f15bd2f1-0aa9-4f82-8a3a-e7d2119dfa15">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="6e9a3231-ab46-4d2c-90e6-3541e049846a"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>nappe limit</Text>
+								<Text>Deckengrenze</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -334,19 +381,22 @@
 								<Language>fr</Language>
 								<Text>limite de nappe</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>nappe limit</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicLimTecBodyItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicLimTecBodyItem TID="c5cd923f-310a-4073-b00c-dcc71103f087">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicLimTecBodyItem TID="e0c37333-8995-44d8-992b-f70c46d7f2be">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="6e9a3231-ab46-4d2c-90e6-3541e049846a"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>imbricate limit</Text>
+								<Text>Schuppengrenze</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -356,19 +406,22 @@
 								<Language>fr</Language>
 								<Text>limite d'écaille</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>imbricate limit</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicLimTecBodyItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicLimTecBodyItem TID="c3f44c10-41f2-4c89-a0e4-9ec5aff63ae0">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicLimTecBodyItem TID="7ec517cd-d796-43f0-a54e-d394314f8bda">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="6e9a3231-ab46-4d2c-90e6-3541e049846a"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>zone limit</Text>
+								<Text>Zonengrenze</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -378,18 +431,22 @@
 								<Language>fr</Language>
 								<Text>limite de zone</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>zone limit</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicLimTecBodyItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicHierItem TID="b8636eaf-f108-4dca-b69c-95475280e498">
-				<IsSuperItem>true</IsSuperItem>
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicHierItem TID="a29e59ff-ab78-43cd-8a0d-9ab64037c4dd">
+				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>fault</Text>
+								<Text>Störung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -399,19 +456,22 @@
 								<Language>fr</Language>
 								<Text>faille</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>fault</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicHierItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicHierItem TID="b354c3af-badf-425b-b238-dd393d99f4be">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicHierItem TID="db473781-7aec-4100-80eb-9b366b05ffe5">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="b8636eaf-f108-4dca-b69c-95475280e498"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>Minor fault system</Text>
+								<Text>Teilstörungssystem</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -421,19 +481,22 @@
 								<Language>fr</Language>
 								<Text>système de faille mineur</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>minor fault system</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicHierItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicHierItem TID="48bb193a-8d4b-4812-a2b0-d31c7b97f168">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicHierItem TID="e17b72cb-e6fc-4e5e-ad2e-25b1d132b050">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="b8636eaf-f108-4dca-b69c-95475280e498"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>Major fault system</Text>
+								<Text>Grossstörungssystem</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -443,19 +506,22 @@
 								<Language>fr</Language>
 								<Text>système de faille majeur</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>major fault system</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicHierItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem TID="3e2b1aee-cda5-4a36-b9a5-ffeb27ebbfba">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem TID="ab018315-cf2f-4fd8-8444-8f147a71102b">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="b8636eaf-f108-4dca-b69c-95475280e498"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>Borehole</Text>
+								<Text>Bohrung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -465,19 +531,22 @@
 								<Language>fr</Language>
 								<Text>forage</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>borehole</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem TID="3892e2e5-6397-4275-aae7-ae856ea75d8c">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem TID="aa3887b5-7b8f-4053-b2d8-30fc3483dcf2">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="b8636eaf-f108-4dca-b69c-95475280e498"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>cartography</Text>
+								<Text>Kartierung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -487,19 +556,22 @@
 								<Language>fr</Language>
 								<Text>cartographie</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>cartography</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem TID="ef98dec5-f772-405f-8e24-c4766d1de678">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem TID="a61d1b20-d154-44e9-a33b-d7ea0590a12a">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="b8636eaf-f108-4dca-b69c-95475280e498"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>seismology</Text>
+								<Text>Seismik</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -509,19 +581,22 @@
 								<Language>fr</Language>
 								<Text>sismologie</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>seismology</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem TID="2e764747-d357-4d89-be56-c9cf5e85a2e5">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem TID="7a908a31-0556-4a7d-a7b0-ee23c7072a36">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="b8636eaf-f108-4dca-b69c-95475280e498"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>modelling</Text>
+								<Text>Modellierung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -529,20 +604,24 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>Modélisation</Text>
+								<Text>modélisation</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>modelling</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem TID="a92e66ac-1f19-49b9-8656-b8994939bf4a">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem TID="3733c3ff-f8c6-4c57-af9c-d357471737e5">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>field measurement</Text>
+								<Text>Feldmessung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -552,18 +631,22 @@
 								<Language>fr</Language>
 								<Text>mesure de terrain</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>field measurement</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem TID="7b0c97e7-0a23-423f-a0f0-e2223491ef53">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem TID="adb1cb27-dabd-4be4-810b-c1d2ed1ddeb7">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>geological profiles</Text>
+								<Text>geologische Profile</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -573,18 +656,22 @@
 								<Language>fr</Language>
 								<Text>coupes géologiques</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>geological cross-sections</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicIdentItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIDRelItem TID="a1e2ccb2-77a8-44e2-a577-f3e5df4f638b">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIDRelItem TID="4e68dabe-f177-4066-97c3-f5cffd736494">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>secured</Text>
+								<Text>gesichert</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -592,20 +679,24 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>avéré</Text>
+								<Text>certain</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>assured</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicIDRelItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIDRelItem TID="c23ea1d3-c3ab-435f-8f1a-a0f224a3b38d">
-				<IsSuperItem>true</IsSuperItem>
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIDRelItem TID="0a57a7f7-4888-4826-a749-656987d7ff3b">
+				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>supposed</Text>
+								<Text>vermutet</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -613,43 +704,49 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>supposé</Text>
+								<Text>probable</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>supposed</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicIDRelItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIDRelItem TID="0d81e57a-6b0f-43ef-9ade-6dbd0a1416e6">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIDRelItem TID="951cb798-313b-4955-b069-99adf6faace8">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="c23ea1d3-c3ab-435f-8f1a-a0f224a3b38d"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>calculated / modelled</Text>
+								<Text>berechnet/ modelliert</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
-								<Text>berechnet / modelliert</Text>
+								<Text>berechnet/ modelliert</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>calculé / modellé</Text>
+								<Text>calculé/ modellé</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>calculated/ modelled</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicIDRelItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIDRelItem TID="7d345dcd-11f2-4394-9bc9-d78d6bb42f07">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicIDRelItem TID="75625b53-c74f-476e-8da0-21b601a75b77">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="c23ea1d3-c3ab-435f-8f1a-a0f224a3b38d"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>conceptual</Text>
+								<Text>konzeptuell</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -659,11 +756,15 @@
 								<Language>fr</Language>
 								<Text>conceptuel</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>conceptual</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicIDRelItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicRefItem TID="7c73016c-62f1-40f2-b3df-17a76e8b5fd0">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicRefItem TID="7b493560-3e1c-48c0-85c7-0a020542283a">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
@@ -680,11 +781,15 @@
 								<Language>fr</Language>
 								<Text>swisstopo</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>swisstopo</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicRefItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicRefItem TID="a66ded35-5c17-4c52-a3ca-2a6d4daeb6d2">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicRefItem TID="60011387-2845-4b54-9afd-d4b337c918dc">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
@@ -701,32 +806,40 @@
 								<Language>fr</Language>
 								<Text>UniBe</Text>
 							</LocalisationCH_V1.LocalisedText>
-						</LocalisedText>
-					</LocalisationCH_V1.MultilingualText>
-				</Name>
-			</DMFaultsCatalogues_V1.Catalogues.FaultBasicRefItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicRefItem TID="b6308dd0-b11b-4f04-a699-a934c1979a4e">
-				<IsSuperItem>false</IsSuperItem>
-				<IsUseable>true</IsUseable>
-				<Name>
-					<LocalisationCH_V1.MultilingualText>
-						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>UniFr</Text>
-							</LocalisationCH_V1.LocalisedText>
-							<LocalisationCH_V1.LocalisedText>
-								<Language>de</Language>
-								<Text>UniFr</Text>
-							</LocalisationCH_V1.LocalisedText>
-							<LocalisationCH_V1.LocalisedText>
-								<Language>fr</Language>
-								<Text>UniFr</Text>
+								<Language>en</Language>
+								<Text>UniBe</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicRefItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicDBItem TID="7953e19d-9171-4174-8c8c-6729d6c4d19e">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicRefItem TID="eaaa0e09-a369-4188-9d56-5286983e393f">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>UniFr</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>UniFr</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>UniFr</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>UniFr</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</DMFaultsCatalogues_V1.Catalogues.FaultBasicRefItem>
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicDBItem TID="63fb27c3-3e1f-40e0-95e1-aea4594932bb">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
@@ -743,11 +856,15 @@
 								<Language>fr</Language>
 								<Text>GeoCover</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>GeoCover</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicDBItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicDBItem TID="1a1cab28-4464-4773-abd7-0f042fbafa1d">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicDBItem TID="47d9796f-9fcd-4eab-a85d-bb167029cf63">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
@@ -764,11 +881,15 @@
 								<Language>fr</Language>
 								<Text>GeoMol</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>GeoMol</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicDBItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultBasicDBItem TID="cf803531-69de-44ff-a925-2e41ffa643f1">
+			<DMFaultsCatalogues_V1.Catalogues.FaultBasicDBItem TID="2cc00d3b-75bf-495d-88d4-b00ca76793fd">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
@@ -785,11 +906,15 @@
 								<Language>fr</Language>
 								<Text>BDMS</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>BDMS</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultBasicDBItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem TID="680790ad-b2fb-426d-a968-3a0e9546d600">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem TID="f6a5d989-d44e-4733-a663-79eebc3071d7">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
@@ -804,20 +929,24 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
+								<Text>N</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
 								<Text>N</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem TID="e21b68e8-ccf3-46ef-bdec-6b46dcafae60">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem TID="a808cca6-b467-4772-8e32-0c1fc1dc40f4">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>NNE</Text>
+								<Text>NNO</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -827,18 +956,22 @@
 								<Language>fr</Language>
 								<Text>NNE</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>NNE</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem TID="442d8984-05f3-4649-84c5-48608a3859ba">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem TID="b2010259-b863-4e11-a0d0-000f9514f011">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>NE</Text>
+								<Text>NO</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -848,18 +981,22 @@
 								<Language>fr</Language>
 								<Text>NE</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>NE</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem TID="324aec3f-bd24-415e-a932-15f67b89d8d2">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem TID="9b74e4c9-d12c-4316-ac6f-60fd7f84cfaa">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>ENE</Text>
+								<Text>ONO</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -869,18 +1006,22 @@
 								<Language>fr</Language>
 								<Text>ENE</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>ENE</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem TID="c8f67623-4f17-4722-baa2-ae88791eefd3">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem TID="1e50504a-cd49-4e83-85c1-376e1c65dc56">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>E</Text>
+								<Text>O</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -890,18 +1031,22 @@
 								<Language>fr</Language>
 								<Text>E</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>E</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem TID="db63b053-3eec-4925-8799-7337c4bb87d8">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem TID="25213058-bf95-4654-bff0-dc730be6f56c">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>ESE</Text>
+								<Text>OSO</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -911,18 +1056,22 @@
 								<Language>fr</Language>
 								<Text>ESE</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>ESE</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem TID="09573ce3-3f14-4ccc-b4d7-574b2662f2b7">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem TID="f7570e94-cf23-4008-92be-e1b1585696a2">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>SE</Text>
+								<Text>SO</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -932,18 +1081,22 @@
 								<Language>fr</Language>
 								<Text>SE</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>SE</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="4ef9adaf-1dcf-420a-8318-2e99aaa143b5">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem TID="e8ee433a-98ad-4c0e-a3cf-45f35aa3fc97">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>SSE</Text>
+								<Text>SSO</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -953,11 +1106,15 @@
 								<Language>fr</Language>
 								<Text>SSE</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>SSE</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
-			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="680790ad-b2fb-426d-a968-3a0e9546d600">
+			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenStrItem>
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="db6de880-8fcc-45ba-9380-b129566063cf">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
@@ -974,18 +1131,22 @@
 								<Language>fr</Language>
 								<Text>N</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>N</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="e21b68e8-ccf3-46ef-bdec-6b46dcafae60">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="45c02d49-b9fd-465e-adbc-57fadf62a15f">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>NNE</Text>
+								<Text>NNO</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -995,18 +1156,22 @@
 								<Language>fr</Language>
 								<Text>NNE</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>NNE</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="442d8984-05f3-4649-84c5-48608a3859ba">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="ad7b53ab-e32b-41c5-9ee0-134f930cec1f">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>NE</Text>
+								<Text>NO</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1016,18 +1181,22 @@
 								<Language>fr</Language>
 								<Text>NE</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>NE</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="324aec3f-bd24-415e-a932-15f67b89d8d2">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="46123741-db19-47d0-bf5e-22f8eb7a4bf4">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>ENE</Text>
+								<Text>ONO</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1037,18 +1206,22 @@
 								<Language>fr</Language>
 								<Text>ENE</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>ENE</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="c8f67623-4f17-4722-baa2-ae88791eefd3">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="b2fccfe2-f073-4ac1-b7f6-c7825dd3d045">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>E</Text>
+								<Text>O</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1056,20 +1229,24 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>E</Text>
+								<Text>O</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>O</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="db63b053-3eec-4925-8799-7337c4bb87d8">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="5fff515a-0f1a-415b-8b60-04b69dd91e12">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>ESE</Text>
+								<Text>OSO</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1079,18 +1256,22 @@
 								<Language>fr</Language>
 								<Text>ESE</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>ESE</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="09573ce3-3f14-4ccc-b4d7-574b2662f2b7">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="af9f7b1a-4822-4a02-990b-b752b2fb0b24">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>SE</Text>
+								<Text>SO</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1100,32 +1281,15 @@
 								<Language>fr</Language>
 								<Text>SE</Text>
 							</LocalisationCH_V1.LocalisedText>
-						</LocalisedText>
-					</LocalisationCH_V1.MultilingualText>
-				</Name>
-			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="4ef9adaf-1dcf-420a-8318-2e99aaa143b5">
-				<IsSuperItem>false</IsSuperItem>
-				<IsUseable>true</IsUseable>
-				<Name>
-					<LocalisationCH_V1.MultilingualText>
-						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>SSE</Text>
-							</LocalisationCH_V1.LocalisedText>
-							<LocalisationCH_V1.LocalisedText>
-								<Language>de</Language>
-								<Text>SSO</Text>
-							</LocalisationCH_V1.LocalisedText>
-							<LocalisationCH_V1.LocalisedText>
-								<Language>fr</Language>
-								<Text>SSE</Text>
+								<Language>en</Language>
+								<Text>SE</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="680790ad-b2fb-426d-a968-3a0e9546d600">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="846b0f7e-2fe4-4980-af91-8cb3442bdb9e">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
@@ -1142,11 +1306,15 @@
 								<Language>fr</Language>
 								<Text>S</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>S</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="e21b68e8-ccf3-46ef-bdec-6b46dcafae60">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="a31a3538-7a89-494a-97ee-61a60222e61d">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
@@ -1163,11 +1331,15 @@
 								<Language>fr</Language>
 								<Text>SSW</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>SSW</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="442d8984-05f3-4649-84c5-48608a3859ba">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="779aaeb0-ffea-47d6-9ff9-08c125a2b50b">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
@@ -1184,11 +1356,15 @@
 								<Language>fr</Language>
 								<Text>SW</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>SW</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="324aec3f-bd24-415e-a932-15f67b89d8d2">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="ab8c9560-9571-4a58-b185-5d639a0c9e03">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
@@ -1205,11 +1381,15 @@
 								<Language>fr</Language>
 								<Text>WSW</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>WSW</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="c8f67623-4f17-4722-baa2-ae88791eefd3">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="239629f9-509d-4a5d-a439-ddc2a3f021c8">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
@@ -1226,11 +1406,15 @@
 								<Language>fr</Language>
 								<Text>W</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>W</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="db63b053-3eec-4925-8799-7337c4bb87d8">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="6ce27d84-480d-4120-b93d-e3ac654953ee">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
@@ -1247,11 +1431,15 @@
 								<Language>fr</Language>
 								<Text>WNW</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>WNW</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="09573ce3-3f14-4ccc-b4d7-574b2662f2b7">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="48de5162-bc16-42b4-9352-c18392b65ff2">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
@@ -1268,11 +1456,15 @@
 								<Language>fr</Language>
 								<Text>NW</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>NW</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="4ef9adaf-1dcf-420a-8318-2e99aaa143b5">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem TID="a8d41e09-e624-4ed2-82f5-5c5d0b46e191">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
@@ -1289,11 +1481,15 @@
 								<Language>fr</Language>
 								<Text>NNW</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>NNW</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
-			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>		
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenDipItem TID="e4fefa87-c35b-4184-ba9c-b21513dda115">
+			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenAziItem>
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenDipItem TID="ee5df558-765f-4831-b65c-368074cdfa90">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
@@ -1308,20 +1504,24 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
+								<Text>horizontal (0-10°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
 								<Text>horizontal (0-10°)</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenDipItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenDipItem TID="ece7b30c-6dbd-4301-a034-6e62215cf4c1">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenDipItem TID="363a5799-553b-4448-852a-5048ee09c03f">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>flat (10-45°)</Text>
+								<Text>flach (10-45°)</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1331,18 +1531,22 @@
 								<Language>fr</Language>
 								<Text>plat (10-45°)</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>flat (10-45°)</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenDipItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenDipItem TID="0299498a-2d03-485a-bf7a-6e7707c88301">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenDipItem TID="ddbd6dfb-9497-44b9-b045-8e2b7e16289a">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>steep (45-80°)</Text>
+								<Text>steil (45-80°)</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1352,18 +1556,22 @@
 								<Language>fr</Language>
 								<Text>raide (45-80°)</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>steep (45-80°)</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenDipItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenDipItem TID="fb074802-c14a-428d-8283-42bcba5f00c4">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraGenDipItem TID="4ce41eda-99a4-470b-b6b9-b4cc20d56ed2">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>vertical (80-90°)</Text>
+								<Text>vertikal (80-90°)</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1373,18 +1581,22 @@
 								<Language>fr</Language>
 								<Text>vertical (80-90°)</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>vertical (80-90°)</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraGenDipItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraLinKindItem TID="11e868b2-e78f-401c-a4ef-68405130454b">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraLinKindItem TID="475a6dc9-0a7e-4460-b87f-952f82fb50af">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>linear undifferenciated</Text>
+								<Text>linear undifferenziert</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1394,18 +1606,22 @@
 								<Language>fr</Language>
 								<Text>indifférencié linéairement</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>linearly undifferenciated</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraLinKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraLinKindItem TID="92e796f0-5227-44a6-86f1-932152970f32">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraLinKindItem TID="80e74b84-b9d7-41b8-9da0-707028e5afc8">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>slickenside / slickenfibres</Text>
+								<Text>Rutschharnisch</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1413,20 +1629,24 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>xxx</Text>
+								<Text>tectoglyphe</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>slickenslide/ slickenfibres</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraLinKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraLinKindItem TID="74133343-bc5d-4bdc-ab38-8618c2c0f12d">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraLinKindItem TID="92ef2784-d6d1-4e5f-9198-31fb9918b7a4">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>striation</Text>
+								<Text>Striemung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1436,18 +1656,22 @@
 								<Language>fr</Language>
 								<Text>striation</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>striation</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraLinKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraLinKindItem TID="05bc0114-26cb-4eeb-a136-f2fc5ca2e0ca">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraLinKindItem TID="be1d5391-042e-4885-958f-8b783ea0b298">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>riddge and grooves</Text>
+								<Text>Grate und Rillen</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1457,18 +1681,22 @@
 								<Language>fr</Language>
 								<Text>arêtes et rainures</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>riddge and grooves</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraLinKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraOffIndItem TID="7b7fbde6-c2e6-4c32-b9e9-f60b1a09a203">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraOffIndItem TID="b7ab8ca5-8626-4204-84db-f60d769ddae4">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>Offset of geological units</Text>
+								<Text>Versatz der geologischen Einheiten</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1478,18 +1706,22 @@
 								<Language>fr</Language>
 								<Text>décalage des unités géologiques</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>offset of geological units</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraOffIndItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraOffIndItem TID="5b01e278-ef07-40d5-b8ba-eb243bab1be3">
-				<IsSuperItem>true</IsSuperItem>
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraOffIndItem TID="396d4c8b-5c44-4ca8-baf4-5f87441161a0">
+				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>linear</Text>
+								<Text>Linear</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1499,19 +1731,22 @@
 								<Language>fr</Language>
 								<Text>linéaire</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>linear</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraOffIndItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraOffIndItem TID="bf9ec2dd-befb-43ad-b640-96932cdac824">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraOffIndItem TID="5ce8d56b-9bf0-4c46-b2f5-575e6eef74c9">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="5b01e278-ef07-40d5-b8ba-eb243bab1be3"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>seismic activity</Text>
+								<Text>seismische Aktivität</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1521,19 +1756,22 @@
 								<Language>fr</Language>
 								<Text>activité sismique</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>seismic activity</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraOffIndItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraOffKindItem TID="602e7e49-a393-4ec4-96d2-b427b0ccb069">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraOffKindItem TID="c8c38cc2-786a-4710-a769-5d1774f77dc6">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="5b01e278-ef07-40d5-b8ba-eb243bab1be3"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>real</Text>
+								<Text>wirklich</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1543,19 +1781,22 @@
 								<Language>fr</Language>
 								<Text>vrai</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>real</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraOffKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraOffKindItem TID="f52ca2dd-c7ec-4446-b8db-cb1d41b38e00">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraOffKindItem TID="8dca75cc-db16-405e-b43c-de2bd210a424">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
-				<Parent REF="5b01e278-ef07-40d5-b8ba-eb243bab1be3"/>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>seeming</Text>
+								<Text>scheinbar</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1565,18 +1806,22 @@
 								<Language>fr</Language>
 								<Text>apparent</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>seeming</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraOffKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraReactKindItem TID="05c1b497-4466-466f-bc25-76be1127f6f2">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraReactKindItem TID="b912a594-3e0c-4361-ab6a-d04b950c52bb">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>overthrust</Text>
+								<Text>Überschiebung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1586,18 +1831,22 @@
 								<Language>fr</Language>
 								<Text>chevauchement</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>overthrust</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraReactKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraReactKindItem TID="a5e03ce5-b3b1-45ea-8412-5e85cdd2720c">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraReactKindItem TID="d0172060-cbe1-49fa-b886-02637c300660">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>reverse fault</Text>
+								<Text>Aufschiebung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1607,18 +1856,22 @@
 								<Language>fr</Language>
 								<Text>faille inverse</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>reverse fault</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraReactKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraReactKindItem TID="2750302e-be4f-41b8-81b3-c1d721e3cbef">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraReactKindItem TID="6c565920-7a54-4394-9cc5-5a4ea5e38893">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>normal fault</Text>
+								<Text>Abschiebung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1628,18 +1881,22 @@
 								<Language>fr</Language>
 								<Text>faille normale</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>normal fault</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraReactKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraReactKindItem TID="ca14b30f-4d1e-41e6-b143-0d9217d67894">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraReactKindItem TID="78cb937e-1de8-4c31-833f-8c9ab57f1bea">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>strike-slip fault</Text>
+								<Text>Blattverschiebung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1649,60 +1906,72 @@
 								<Language>fr</Language>
 								<Text>décrochement</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>strike-slip fault</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraReactKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraReactKindItem TID="e62bbd12-b103-48dc-b431-1ec43f5c01d8">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraReactKindItem TID="339e5639-95c5-4c69-8964-4eac4a03ac8e">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>complex fault</Text>
+								<Text>komplexe Störung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
-								<Text>Komplexe Störung</Text>
+								<Text>komplexe Störung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
 								<Text>faille complexe</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>complex fault</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraReactKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraQuatActItem TID="643036d6-81e7-4d31-8a39-c5e6fea23de3">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraQuatActItem TID="18533dd9-a407-48ce-8b41-a62fc0081059">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>offset of the moraine</Text>
+								<Text>Versatz in der Moräne</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
-								<Text>Versatz in Moräne</Text>
+								<Text>Versatz in der Moräne</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
 								<Text>décalage de la moraine</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>offset of the moraine</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraQuatActItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraNeotLinKindItem TID="11e868b2-e78f-401c-a4ef-68405130454b">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraNeotLinKindItem TID="afcc5c8f-870e-4668-a759-2ad8948b016a">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>linear undifferenciated</Text>
+								<Text>linear undifferenziert</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1712,18 +1981,22 @@
 								<Language>fr</Language>
 								<Text>indifférencié linéairement</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>linear undifferenciated</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraNeotLinKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraNeotLinKindItem TID="92e796f0-5227-44a6-86f1-932152970f32">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraNeotLinKindItem TID="175dbcce-9b7a-4efd-875b-de505112eeac">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>slickenside / slickenfibres</Text>
+								<Text>Rutschharnisch</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1731,20 +2004,24 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>xxx</Text>
+								<Text>tectoglyphe</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>slickenslide/ slickenfibres</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraNeotLinKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraNeotLinKindItem TID="74133343-bc5d-4bdc-ab38-8618c2c0f12d">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraNeotLinKindItem TID="48987650-7b80-44f1-9489-bb7d57181b99">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>striation</Text>
+								<Text>Striemung</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1754,18 +2031,22 @@
 								<Language>fr</Language>
 								<Text>striation</Text>
 							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>striation</Text>
+							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</DMFaultsCatalogues_V1.Catalogues.FaultExtraNeotLinKindItem>
-			<DMFaultsCatalogues_V1.Catalogues.FaultExtraNeotLinKindItem TID="05bc0114-26cb-4eeb-a136-f2fc5ca2e0ca">
+			<DMFaultsCatalogues_V1.Catalogues.FaultExtraNeotLinKindItem TID="61dbb38c-3f20-4c4a-839f-8c61e1f7d3ac">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
 				<Name>
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>riddge and grooves</Text>
+								<Text>Grate und Rillen</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
@@ -1774,6 +2055,10 @@
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
 								<Text>arêtes et rainures</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>riddge and grooves</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
