@@ -2,18 +2,20 @@
 <TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
 	<HEADERSECTION SENDER="ili2gpkg-4.5.0-fc023c8d2d8cd44d792927e45dc80c1ad973f095" VERSION="2.3">
 		<MODELS>
-			<MODEL NAME="CatalogueObjects_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
-			<MODEL NAME="CatalogueObjectTrees_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
 			<MODEL NAME="InternationalCodes_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
 			<MODEL NAME="Localisation_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
 			<MODEL NAME="LocalisationCH_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
 			<MODEL NAME="Dictionaries_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
 			<MODEL NAME="DictionariesCH_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
+			<MODEL NAME="CatalogueObjects_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
+			<MODEL NAME="CatalogueObjectTrees_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
 			<MODEL NAME="FaultsCatalogues_V1" VERSION="2021-11-30" URI="mailto:U80863546@localhost"/>
 		</MODELS>
 	</HEADERSECTION>
 	<DATASECTION>
-		<FaultsCatalogues_V1.Catalogues BID="6af4c65e_99e8_4236_b822_b830795f740c">
+		<FaultsCatalogues_V1.Catalogues BID="8464e720-7bdd-4b76-9e21-83d66a78122e">
+		</FaultsCatalogues_V1.Catalogues>
+		<FaultsCatalogues_V1.Catalogues BID="5">
 			<FaultsCatalogues_V1.Catalogues.FaultBasicKindItem TID="fa5f15a2-162c-4a15-8302-a0838777004b">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
@@ -371,19 +373,19 @@
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>Deckengrenze</Text>
+								<Text>Decken trennend</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
-								<Text>Deckengrenze</Text>
+								<Text>Decken trennend</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>limite de nappe</Text>
+								<Text>nappes limitants</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>en</Language>
-								<Text>nappe limit</Text>
+								<Text>limiting nappes</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
@@ -396,44 +398,19 @@
 					<LocalisationCH_V1.MultilingualText>
 						<LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
-								<Text>Schuppengrenze</Text>
+								<Text>Schuppen trennend</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>de</Language>
-								<Text>Schuppengrenze</Text>
+								<Text>Schuppen trennend</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>limite d'écaille</Text>
+								<Text>écailles limitants</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>en</Language>
-								<Text>imbricate limit</Text>
-							</LocalisationCH_V1.LocalisedText>
-						</LocalisedText>
-					</LocalisationCH_V1.MultilingualText>
-				</Name>
-			</FaultsCatalogues_V1.Catalogues.FaultBasicLimTecBodyItem>
-			<FaultsCatalogues_V1.Catalogues.FaultBasicLimTecBodyItem TID="7ec517cd-d796-43f0-a54e-d394314f8bda">
-				<IsSuperItem>false</IsSuperItem>
-				<IsUseable>true</IsUseable>
-				<Name>
-					<LocalisationCH_V1.MultilingualText>
-						<LocalisedText>
-							<LocalisationCH_V1.LocalisedText>
-								<Text>Zonengrenze</Text>
-							</LocalisationCH_V1.LocalisedText>
-							<LocalisationCH_V1.LocalisedText>
-								<Language>de</Language>
-								<Text>Zonengrenze</Text>
-							</LocalisationCH_V1.LocalisedText>
-							<LocalisationCH_V1.LocalisedText>
-								<Language>fr</Language>
-								<Text>limite de zone</Text>
-							</LocalisationCH_V1.LocalisedText>
-							<LocalisationCH_V1.LocalisedText>
-								<Language>en</Language>
-								<Text>zone limit</Text>
+								<Text>limiting imbricates</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
