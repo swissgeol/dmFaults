@@ -4,9 +4,9 @@ INTERLIS 2.3;
 !!****************************************
 !! MODEL
 !!****************************************
-/** Datenmodell für die Beschreibung der Wertetabelle (Kataloge) des DMFaults
+/** Datenmodell für die Beschreibung der Wertetabelle (Kataloge) des Faults
 */
-MODEL DMFaultsCatalogues_V1 (en) 
+MODEL FaultsCatalogues_V1 (en) 
 AT "mailto:U80863546@localhost" 
 VERSION "2021-11-30" =
 
@@ -309,4 +309,4 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
 	
   END Catalogues;
   
-END DMFaultsCatalogues_V1.
+END FaultsCatalogues_V1.
