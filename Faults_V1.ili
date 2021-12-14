@@ -23,10 +23,8 @@ VERSION "2021-11-30"  =
 !! UNITS
 !!****************************************
   UNIT
-  Angle_Degree = 180 / PI [INTERLIS.rad];
-  Millimeter [mm] = 0.001 [INTERLIS.m];
-  Year [y] = 60*60*24*365 [INTERLIS.s];
-  Slip_Rate = (mm/y);
+  Year [y] = 365 [Units.d];
+  Slip_Rate = (Units.mm/y);
   
 
 
@@ -157,10 +155,10 @@ VERSION "2021-11-30"  =
 	  General_Dip : FaultsCatalogues_V1.Catalogues.FaultExtraGenDipRef;
 	  /** Gemessener Azimut (0-359°) der Störungsfläche / des Störungssystems
       */
-	  Orientation_Azimuth : 0.000 .. 359.999 CIRCULAR [Angle_Degree]; 
+	  Orientation_Azimuth : 0.000 .. 359.999 CIRCULAR [Units.Angle_Degree]; 
 	  /** Gemessener Dip (0-90°) der Störungsfläche / des Störungssystems
       */
-	  Orientation_Dip : 0.000 .. 90.000 [Angle_Degree]; 
+	  Orientation_Dip : 0.000 .. 90.000 [Units.Angle_Degree]; 
 	  
 	  
 	/** LINEAR_STRUCTURES ATTRIBUTES
@@ -170,10 +168,10 @@ VERSION "2021-11-30"  =
 	  Lineation_Kind : FaultsCatalogues_V1.Catalogues.FaultExtraLinKindRef; 
 	  /** Das Fallazimut (0-359°) eines Linears
       */
-	  Lineation_Trend : 0.000 .. 359.999 CIRCULAR [Angle_Degree]; 
+	  Lineation_Trend : 0.000 .. 359.999 CIRCULAR [Units.Angle_Degree]; 
 	  /** Der Fallwinkel (0-90°) eines Linears
       */
-	  Lineation_Dip : 0.000 .. 90.000 [Angle_Degree];
+	  Lineation_Dip : 0.000 .. 90.000 [Units.Angle_Degree];
 
 
 	/** OFFSET ATTRIBUTES
@@ -192,10 +190,10 @@ VERSION "2021-11-30"  =
 	  Estimated_Slip_Offset : 0.000 .. 10000.000 [INTERLIS.m];
 	  /** Versatzrichtung des Hangenden, auch «Plunge Direction» genannt
 	  */
-	  Slip_Trend : 0.000 .. 359.999 CIRCULAR [Angle_Degree]; 
+	  Slip_Trend : 0.000 .. 359.999 CIRCULAR [Units.Angle_Degree]; 
 	  /** Fallwinkel auf der Störungsfläche des Hangenden, auch «Plunge» genannt
 	  */
-	  Slip_Plunge : 0.000 .. 90.000 [Angle_Degree];
+	  Slip_Plunge : 0.000 .. 90.000 [Units.Angle_Degree];
 	  /** Durchschnitliche Rutschgeschwindigkeit in [mm/y]
 	  */
 	  Slip_Rate : 0.000 .. 1000.000 [Slip_Rate]; 
@@ -224,10 +222,10 @@ VERSION "2021-11-30"  =
 	  Neotectonic_Lineation_Kind : FaultsCatalogues_V1.Catalogues.FaultExtraNeotLinKindRef; 
 	  /** Das Fallazimut (0-359°) eines Linears
       */
-	  Neotectonic_Lineation_Trend : 0.000 .. 359.999 CIRCULAR [Angle_Degree];
+	  Neotectonic_Lineation_Trend : 0.000 .. 359.999 CIRCULAR [Units.Angle_Degree];
 	  /** Der Fallwinkel (0-90°) eines Linears gemessen in der Vertikalebene
       */
-	  Neotectonic_Lineation_Plunge : 0.000 .. 90.000 [Angle_Degree]; 
+	  Neotectonic_Lineation_Plunge : 0.000 .. 90.000 [Units.Angle_Degree]; 
 	  /** Maximale geschätzte Magnitude (z.B. aufgrund Bruchlänge)
 	  */
 	  Activity_Max_Magnitude : 0 .. 100000 [INTERLIS.m];  !!muss noch mit richtiger Einheit ergänzt werden. 
@@ -237,29 +235,29 @@ VERSION "2021-11-30"  =
     /** Basisklasse für die Beschreibung der Geometrien
     */
 	
-	CLASS GeometryType (ABSTRACT)=
+	CLASS GeometryOfInterest (ABSTRACT)=
       /** Qualität der Geometrie (korrekte Geometrie oder Platzhaltergeometrie)
       */
-    END GeometryType;
+    END GeometryOfInterest;
 
     /** CLASS Punktgeometrien
     */
 	CLASS PointGeometry
-    EXTENDS GeometryType =
+    EXTENDS GeometryOfInterest =
       Geometry : MANDATORY GeometryCHLV95_V1.Coord2;
     END PointGeometry;
 
     /** CLASS Liniengeometrien
     */
 	CLASS LineGeometry
-    EXTENDS GeometryType =
+    EXTENDS GeometryOfInterest =
       Geometry : MANDATORY Line;
     END LineGeometry;
 	
     /** CLASS Polygongeometrien überlappend
     */
 	CLASS SurfaceGeometry
-    EXTENDS GeometryType =
+    EXTENDS GeometryOfInterest =
       Geometry : MANDATORY Surface;
     END SurfaceGeometry; 
 	
@@ -271,11 +269,11 @@ VERSION "2021-11-30"  =
 
     /** Zugewiesene Geometrie(n) einer Störung
     */
-	ASSOCIATION GeometryType_Fault =
+	ASSOCIATION GeometryOfInterest_Fault =
       FaultBasic -<#> {1} FaultBasic;
-      GeometryType -- {1..*} GeometryType;
+      GeometryOfInterest -- {0..*} GeometryOfInterest;
 
-    END GeometryType_Fault;
+    END GeometryOfInterest_Fault;
 	
 	ASSOCIATION FaultBasic_FaultBasic =
       FaultBasicX -- {0..*} FaultBasic;
