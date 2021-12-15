@@ -8,7 +8,7 @@ INTERLIS 2.3;
 */
 MODEL FaultsCatalogues_V1 (en) 
 AT "mailto:U80863546@localhost" 
-VERSION "2021-11-30" =
+VERSION "2021-12-15" =
 
 
 !!****************************************
@@ -35,144 +35,144 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	/** IDENTIFICATION ATTRIBUTES
 	  */
-	/** Codelist für das Attribut FaultBasic.Kind = Typ der Störung (Überschiebung, Aufschiebung, ...)
+	/** Codelist für das Attribut Fault.Kind = Typ der Störung (Überschiebung, Aufschiebung, ...)
     */
-	CLASS FaultBasicKindItem
+	CLASS FaultKindItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultBasicKindItem;
+    END FaultKindItem;
 
-    STRUCTURE FaultBasicKindRef
+    STRUCTURE FaultKindRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultBasicKindItem;
-    END FaultBasicKindRef;
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultKindItem;
+    END FaultKindRef;
 	
 	
 	/** CHARACTERISATION ATTRIBUTES
 	  */
-	/** Codelist für das Attribut FaultBasic.Vertical_Movement = Bewegung parallel der Fallrichtung der Störung
+	/** Codelist für das Attribut Fault.Vertical_Movement = Bewegung parallel der Fallrichtung der Störung
     */
-	CLASS FaultBasicVertMovItem
+	CLASS FaultVertMovItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultBasicVertMovItem;
+    END FaultVertMovItem;
 
-    STRUCTURE FaultBasicVertMovRef
+    STRUCTURE FaultVertMovRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultBasicVertMovItem;
-    END FaultBasicVertMovRef;
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultVertMovItem;
+    END FaultVertMovRef;
 	
-	/** Codelist für das Attribut FaultBasic.Horizontal_Movement = Bewegung parallel der Streichrichtung der Störung
+	/** Codelist für das Attribut Fault.Horizontal_Movement = Bewegung parallel der Streichrichtung der Störung
     */
-	CLASS FaultBasicHoriMovItem
+	CLASS FaultHoriMovItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultBasicHoriMovItem;
+    END FaultHoriMovItem;
 
-    STRUCTURE FaultBasicHoriMovRef
+    STRUCTURE FaultHoriMovRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultBasicHoriMovItem;
-    END FaultBasicHoriMovRef;
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultHoriMovItem;
+    END FaultHoriMovRef;
 	
-	/** Codelist für das Attribut FaultBasic.Limit_Tectonic_Body = Art der Grenze einer tektonischen Einheit wie Deckengrenze, Schuppengrenze oder Zonengrenze
+	/** Codelist für das Attribut Fault.Limit_Tectonic_Body = Art der Grenze einer tektonischen Einheit wie Deckengrenze, Schuppengrenze oder Zonengrenze
     */	
-	CLASS FaultBasicLimTecBodyItem
+	CLASS FaultLimTecBodyItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultBasicLimTecBodyItem;
+    END FaultLimTecBodyItem;
 
-    STRUCTURE FaultBasicLimTecBodyRef
+    STRUCTURE FaultLimTecBodyRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultBasicLimTecBodyItem;
-    END FaultBasicLimTecBodyRef;	
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultLimTecBodyItem;
+    END FaultLimTecBodyRef;	
 	
 	
 	/** HIERARCHY ATTRIBUTES
 	*/
-	/** Codelist für das Attribut FaultBasic.Hierarchy = Hierarchiestufe der Störung / des Störungssystems
+	/** Codelist für das Attribut Fault.Hierarchy = Hierarchiestufe der Störung / des Störungssystems
     */	
-	CLASS FaultBasicHierItem
+	CLASS FaultHierItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultBasicHierItem;
+    END FaultHierItem;
 
-    STRUCTURE FaultBasicHierRef
+    STRUCTURE FaultHierRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultBasicHierItem;
-    END FaultBasicHierRef;
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultHierItem;
+    END FaultHierRef;
 	
 	
 	/** ORIGIN ATTRIBUTES
 	*/
-	/** Codelist für das Attribut FaultBasic.Identification = Erfassungsmethode der Störung
+	/** Codelist für das Attribut Fault.Identification = Erfassungsmethode der Störung
     */	
-	CLASS FaultBasicIdentItem
+	CLASS FaultIdentItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultBasicIdentItem;
+    END FaultIdentItem;
 
-    STRUCTURE FaultBasicIdentRef
+    STRUCTURE FaultIdentRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultBasicIdentItem;
-    END FaultBasicIdentRef;
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultIdentItem;
+    END FaultIdentRef;
 	
-	/** Codelist für das Attribut FaultBasic.Identification_Reliability = Zuverlässigkeit der Erfassungsmethode der Störung
+	/** Codelist für das Attribut Fault.Identification_Reliability = Zuverlässigkeit der Erfassungsmethode der Störung
     */	
-	CLASS FaultBasicIDRelItem
+	CLASS FaultIDRelItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultBasicIDRelItem;
+    END FaultIDRelItem;
 
-    STRUCTURE FaultBasicIDRelRef
+    STRUCTURE FaultIDRelRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultBasicIDRelItem;
-    END FaultBasicIDRelRef;
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultIDRelItem;
+    END FaultIDRelRef;
 	
-	/** Codelist für das Attribut FaultBasic.Reference = Verweis zur Datenherkunft
+	/** Codelist für das Attribut Fault.Reference = Verweis zur Datenherkunft
     */	
-	CLASS FaultBasicRefItem
+	CLASS FaultRefItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultBasicRefItem;
+    END FaultRefItem;
 
-    STRUCTURE FaultBasicRefRef
+    STRUCTURE FaultRefRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultBasicRefItem;
-    END FaultBasicRefRef;	
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultRefItem;
+    END FaultRefRef;	
 	
-	/** Codelist für das Attribut FaultBasic.Database = Verweis zu einer bestehenden Datenbank (Bsp. BDMS)
+	/** Codelist für das Attribut Fault.Database = Verweis zu einer bestehenden Datenbank (Bsp. BDMS)
     */	
-	CLASS FaultBasicDBItem
+	CLASS FaultDBItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultBasicDBItem;
+    END FaultDBItem;
 
-    STRUCTURE FaultBasicDBRef
+    STRUCTURE FaultDBRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultBasicDBItem;
-    END FaultBasicDBRef;
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultDBItem;
+    END FaultDBRef;
 	
-    /** Codelist für das Attribut FaultBasic.Database_ID = Verweis zu einer ID in einer bestehenden Datenbank
+    /** Codelist für das Attribut Fault.Database_ID = Verweis zu einer ID in einer bestehenden Datenbank
     */	
-	CLASS FaultBasicDBIDItem
+	CLASS FaultDBIDItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultBasicDBIDItem;
+    END FaultDBIDItem;
 
-    STRUCTURE FaultBasicDBIDRef
+    STRUCTURE FaultDBIDRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultBasicDBIDItem;
-    END FaultBasicDBIDRef;
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultDBIDItem;
+    END FaultDBIDRef;
 	
 	
 	
@@ -180,131 +180,131 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	/** ORIENTATION ATTRIBUTES
 	  */
-	/** Codelist für das Attribut FaultExtra.General_Strike = Generelle Streichrichtung einer Störungsfläche 
+	/** Codelist für das Attribut Fault.General_Strike = Generelle Streichrichtung einer Störungsfläche 
     */
-	CLASS FaultExtraGenStrItem
+	CLASS FaultGenStrItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultExtraGenStrItem;
+    END FaultGenStrItem;
 
-    STRUCTURE FaultExtraGenStrRef
+    STRUCTURE FaultGenStrRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultExtraGenStrItem;
-    END FaultExtraGenStrRef;
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultGenStrItem;
+    END FaultGenStrRef;
 	
-	/** Codelist für das Attribut FaultExtra.General_Azimuth = Generelle Fallrichtung einer Störungsfläche 
+	/** Codelist für das Attribut Fault.General_Azimuth = Generelle Fallrichtung einer Störungsfläche 
     */
-	CLASS FaultExtraGenAziItem
+	CLASS FaultGenAziItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultExtraGenAziItem;
+    END FaultGenAziItem;
 
-    STRUCTURE FaultExtraGenAziRef
+    STRUCTURE FaultGenAziRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultExtraGenAziItem;
-    END FaultExtraGenAziRef;
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultGenAziItem;
+    END FaultGenAziRef;
 	
-	/** Codelist für das Attribut FaultExtra.General_Dip = Genereller Fallwinkel einer Störungsfläche 
+	/** Codelist für das Attribut Fault.General_Dip = Genereller Fallwinkel einer Störungsfläche 
     */
-	CLASS FaultExtraGenDipItem
+	CLASS FaultGenDipItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultExtraGenDipItem;
+    END FaultGenDipItem;
 
-    STRUCTURE FaultExtraGenDipRef
+    STRUCTURE FaultGenDipRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultExtraGenDipItem;
-    END FaultExtraGenDipRef;	
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultGenDipItem;
+    END FaultGenDipRef;	
 	
 	
 	/** LINEAR_STRUCTURES ATTRIBUTES
 	  */
-	/** Codelist für das Attribut FaultExtra.Lineation_Kind = Lineationstypen auf einer Störungsfläche 
+	/** Codelist für das Attribut Fault.Lineation_Kind = Lineationstypen auf einer Störungsfläche 
     */
-	CLASS FaultExtraLinKindItem
+	CLASS FaultLinKindItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultExtraLinKindItem;
+    END FaultLinKindItem;
 	
-	STRUCTURE FaultExtraLinKindRef
+	STRUCTURE FaultLinKindRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultExtraLinKindItem;
-    END FaultExtraLinKindRef;
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultLinKindItem;
+    END FaultLinKindRef;
 	
 	
 	/** OFFSET ATTRIBUTES
 	  */
-	/** Codelist für das Attribut FaultExtra.Offset_Indicator = Versatzindikator 
+	/** Codelist für das Attribut Fault.Offset_Indicator = Versatzindikator 
     */
-	CLASS FaultExtraOffIndItem
+	CLASS FaultOffIndItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultExtraOffIndItem;
+    END FaultOffIndItem;
 	
-	STRUCTURE FaultExtraOffIndRef
+	STRUCTURE FaultOffIndRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultExtraOffIndItem;
-    END FaultExtraOffIndRef;
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultOffIndItem;
+    END FaultOffIndRef;
 	
-	/** Codelist für das Attribut FaultExtra.Offset_Kind = Versatzart 
+	/** Codelist für das Attribut Fault.Offset_Kind = Versatzart 
     */
-	CLASS FaultExtraOffKindItem
+	CLASS FaultOffKindItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultExtraOffKindItem;
+    END FaultOffKindItem;
 	
-	STRUCTURE FaultExtraOffKindRef
+	STRUCTURE FaultOffKindRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultExtraOffKindItem;
-    END FaultExtraOffKindRef;
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultOffKindItem;
+    END FaultOffKindRef;
 	
 	
 	/** NEOTECTONICS ATTRIBUTES
 	  */
-	/** Codelist für das Attribut FaultExtra.Reactivation_Kind = Typ der reaktivierten Störung anhand der Bewegungsrichtung
+	/** Codelist für das Attribut Fault.Reactivation_Kind = Typ der reaktivierten Störung anhand der Bewegungsrichtung
     */
-	CLASS FaultExtraReactKindItem
+	CLASS FaultReactKindItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultExtraReactKindItem;
+    END FaultReactKindItem;
 	
-	STRUCTURE FaultExtraReactKindRef
+	STRUCTURE FaultReactKindRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultExtraReactKindItem;
-    END FaultExtraReactKindRef;	
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultReactKindItem;
+    END FaultReactKindRef;	
 	
-	/** Codelist für das Attribut FaultExtra.Reactivation_Indicator_For_Quaternary_Activity = Indikatoren für die neotektonische Aktivität der Störung
+	/** Codelist für das Attribut Fault.Reactivation_Indicator_For_Quaternary_Activity = Indikatoren für die neotektonische Aktivität der Störung
     */
-	CLASS FaultExtraQuatActItem
+	CLASS FaultQuatActItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultExtraQuatActItem;
+    END FaultQuatActItem;
 	
-	STRUCTURE FaultExtraQuatActRef
+	STRUCTURE FaultQuatActRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultExtraQuatActItem;
-    END FaultExtraQuatActRef;
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultQuatActItem;
+    END FaultQuatActRef;
 	
-	/** Codelist für das Attribut FaultExtra.Neotectonic_Lineation_Kind = Lineationstypen auf einer Störungsfläche
+	/** Codelist für das Attribut Fault.Neotectonic_Lineation_Kind = Lineationstypen auf einer Störungsfläche
     */
-	CLASS FaultExtraNeotLinKindItem
+	CLASS FaultNeotLinKindItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
-    END FaultExtraNeotLinKindItem;
+    END FaultNeotLinKindItem;
 	
-	STRUCTURE FaultExtraNeotLinKindRef
+	STRUCTURE FaultNeotLinKindRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultExtraNeotLinKindItem;
-    END FaultExtraNeotLinKindRef;
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultNeotLinKindItem;
+    END FaultNeotLinKindRef;
 	
 	
   END Catalogues;

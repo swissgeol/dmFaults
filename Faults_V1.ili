@@ -8,7 +8,7 @@ INTERLIS 2.3;
 */
 MODEL Faults_V1 (en)
 AT "mailto:U80863546@localhost"
-VERSION "2021-11-30"  =
+VERSION "2021-12-15"  =
 
 
 !!****************************************
@@ -56,14 +56,14 @@ VERSION "2021-11-30"  =
 
     /** GRUNDLEGENDE ATTRIBUTE des Modells Faults
     */
-    CLASS FaultBasic =
+    CLASS Fault =
       
 	  
 	  /** IDENTIFICATION ATTRIBUTES
 	  */
 	  /** Typ der Störung
       */
-	  Kind : MANDATORY FaultsCatalogues_V1.Catalogues.FaultBasicKindRef;
+	  Kind : MANDATORY FaultsCatalogues_V1.Catalogues.FaultKindRef;
       /** ID bestehend aus Nummer (und Name) der Störung
       */
 	  Fault_ID : MANDATORY TEXT;
@@ -76,20 +76,20 @@ VERSION "2021-11-30"  =
 	  */
 	  /** Bewegung parallel der Fallrichtung der Störung / des Störungssystems
 	  */
-	  Vertical_Movement : MANDATORY FaultsCatalogues_V1.Catalogues.FaultBasicVertMovRef;
+	  Vertical_Movement : MANDATORY FaultsCatalogues_V1.Catalogues.FaultVertMovRef;
 	  /** Bewegung parallel der Streichrichtung der Störung / des Störungssystems
 	  */
-	  Horizontal_Movement : MANDATORY FaultsCatalogues_V1.Catalogues.FaultBasicHoriMovRef;
+	  Horizontal_Movement : MANDATORY FaultsCatalogues_V1.Catalogues.FaultHoriMovRef;
 	  /** Art der Grenze einer tektonischen Einheit wie Deckengrenze, Schuppengrenze oder Zonengrenze
 	  */
-	  Limit_Tectonic_Body : FaultsCatalogues_V1.Catalogues.FaultBasicLimTecBodyRef;
+	  Limit_Tectonic_Body : FaultsCatalogues_V1.Catalogues.FaultLimTecBodyRef;
 	  
 	  
 	  /** HIERARCHY ATTRIBUTES
 	  */
 	  /** Hierarchiestufe der Störung / des Störungssystems
 	  */
-	  Hierarchy : MANDATORY FaultsCatalogues_V1.Catalogues.FaultBasicHierRef;
+	  Hierarchy : MANDATORY FaultsCatalogues_V1.Catalogues.FaultHierRef;
 	  /** Name des übergeordneten Teilstörungssystems (TSS) 
 	  */
 	  /**Linked_TSS : TEXT; */
@@ -102,28 +102,21 @@ VERSION "2021-11-30"  =
 	  */
 	  /** Erfassungsmethode der Störung
 	  */
-	  Identification : MANDATORY FaultsCatalogues_V1.Catalogues.FaultBasicIdentRef; 
+	  Identification : MANDATORY FaultsCatalogues_V1.Catalogues.FaultIdentRef; 
 	  /** Grad der Zuverlässigkeit, welcher von der jeweiligen Erfassungsmethode abhängt
 	  */
-	  Identification_Reliability : MANDATORY FaultsCatalogues_V1.Catalogues.FaultBasicIDRelRef;
+	  Identification_Reliability : MANDATORY FaultsCatalogues_V1.Catalogues.FaultIDRelRef;
 	  /** Verweis zur Datenherkunft (Publikation, Kanton, swisstopo,...)
 	  */
-	  Reference : FaultsCatalogues_V1.Catalogues.FaultBasicRefRef;
+	  Reference : FaultsCatalogues_V1.Catalogues.FaultRefRef;
 	  /** Verweis zu einer bestehenden Datenbank (Bsp. BDMS), in welcher die Störung bereits aufgeführt wird
 	  */
-	  Database : FaultsCatalogues_V1.Catalogues.FaultBasicDBRef; 
+	  Database : FaultsCatalogues_V1.Catalogues.FaultDBRef; 
 	  /** Verweis zu einer ID in einer bestehenden Datenbank (Bsp. ID einer Bohrung in BDMS)
 	  */
-	  Database_ID : FaultsCatalogues_V1.Catalogues.FaultBasicDBIDRef; 
+	  Database_ID : FaultsCatalogues_V1.Catalogues.FaultDBIDRef; 
 	  
-    END FaultBasic;
-	
-
-	
-	/** WEITERFÜHRENDE ATTRIBUTE des Modells Faults
-    */
-    CLASS FaultExtra 
-	EXTENDS FaultBasic = 
+    
 	
 	
 	/** EXTENSION ATTRIBUTES
@@ -146,13 +139,13 @@ VERSION "2021-11-30"  =
 	  */
 	  /** Generelle Streichrichtung einer Störungsfläche / eines Störungssystems
       */
-	  General_Strike : FaultsCatalogues_V1.Catalogues.FaultExtraGenStrRef; 
+	  General_Strike : FaultsCatalogues_V1.Catalogues.FaultGenStrRef; 
 	  /** Generelle Fallrichtung einer Störungsfläche / eines Störungssystems
       */
-	  General_Azimuth : FaultsCatalogues_V1.Catalogues.FaultExtraGenAziRef; 
+	  General_Azimuth : FaultsCatalogues_V1.Catalogues.FaultGenAziRef; 
 	  /** Genereller Fallwinkel  einer Störungsfläche / eines Störungssystems
       */
-	  General_Dip : FaultsCatalogues_V1.Catalogues.FaultExtraGenDipRef;
+	  General_Dip : FaultsCatalogues_V1.Catalogues.FaultGenDipRef;
 	  /** Gemessener Azimut (0-359°) der Störungsfläche / des Störungssystems
       */
 	  Orientation_Azimuth : 0.000 .. 359.999 CIRCULAR [Units.Angle_Degree]; 
@@ -165,7 +158,7 @@ VERSION "2021-11-30"  =
 	  */
 	  /** Lineationstypen auf einer Störungsfläche
       */
-	  Lineation_Kind : FaultsCatalogues_V1.Catalogues.FaultExtraLinKindRef; 
+	  Lineation_Kind : FaultsCatalogues_V1.Catalogues.FaultLinKindRef; 
 	  /** Das Fallazimut (0-359°) eines Linears
       */
 	  Lineation_Trend : 0.000 .. 359.999 CIRCULAR [Units.Angle_Degree]; 
@@ -178,10 +171,10 @@ VERSION "2021-11-30"  =
 	  */
 	  /** Versatzindikator. Wie wurde der Versatz entdeckt? Anhand eines geologischen Markers (z.B. Versatz) oder seismische Aktivität
       */
-	  Offset_Indicator : FaultsCatalogues_V1.Catalogues.FaultExtraOffIndRef; 
+	  Offset_Indicator : FaultsCatalogues_V1.Catalogues.FaultOffIndRef; 
 	  /** Versatzart dient zur Unterscheidung von wirklichem oder scheinbarem Versatz
       */
-	  Offset_Kind : FaultsCatalogues_V1.Catalogues.FaultExtraOffKindRef;
+	  Offset_Kind : FaultsCatalogues_V1.Catalogues.FaultOffKindRef;
 	  /** Gemessener Betrag des Versatzes entlang der Bewegungsrichtung (Slip_Trend)
       */
 	  Measured_Slip_Offset : 0.000 .. 10000.000 [INTERLIS.m]; 
@@ -213,13 +206,13 @@ VERSION "2021-11-30"  =
 	  Reactivation : BOOLEAN; 
 	  /** Typ der reaktivierten Störung / des reaktivierten Störungssystems anhand der Bewegungsrichtung
       */ 
-	  Reactivation_Kind : FaultsCatalogues_V1.Catalogues.FaultExtraReactKindRef; 
+	  Reactivation_Kind : FaultsCatalogues_V1.Catalogues.FaultReactKindRef; 
 	  /** Indikatoren für die neotektonische Aktivität der Störung/des Störungssystems
       */
-	  Indicator_For_Quaternary_Activity : FaultsCatalogues_V1.Catalogues.FaultExtraQuatActRef; 
+	  Indicator_For_Quaternary_Activity : FaultsCatalogues_V1.Catalogues.FaultQuatActRef; 
 	  /** Lineationstypen auf einer Störungsfläche, welche klar einer neotektonischen Aktivität zugeordnet werden können
       */
-	  Neotectonic_Lineation_Kind : FaultsCatalogues_V1.Catalogues.FaultExtraNeotLinKindRef; 
+	  Neotectonic_Lineation_Kind : FaultsCatalogues_V1.Catalogues.FaultNeotLinKindRef; 
 	  /** Das Fallazimut (0-359°) eines Linears
       */
 	  Neotectonic_Lineation_Trend : 0.000 .. 359.999 CIRCULAR [Units.Angle_Degree];
@@ -230,14 +223,15 @@ VERSION "2021-11-30"  =
 	  */
 	  Activity_Max_Magnitude : 0 .. 100000 [INTERLIS.m];  !!muss noch mit richtiger Einheit ergänzt werden. 
 	  
-	END FaultExtra; 
+	END Fault; 
+
+
+
 
     /** Basisklasse für die Beschreibung der Geometrien
     */
 	
 	CLASS GeometryOfInterest (ABSTRACT)=
-      /** Qualität der Geometrie (korrekte Geometrie oder Platzhaltergeometrie)
-      */
     END GeometryOfInterest;
 
     /** CLASS Punktgeometrien
@@ -270,15 +264,15 @@ VERSION "2021-11-30"  =
     /** Zugewiesene Geometrie(n) einer Störung
     */
 	ASSOCIATION GeometryOfInterest_Fault =
-      FaultBasic -<#> {1} FaultBasic;
+      Fault -<#> {1} Fault;
       GeometryOfInterest -- {0..*} GeometryOfInterest;
 
     END GeometryOfInterest_Fault;
 	
-	ASSOCIATION FaultBasic_FaultBasic =
-      FaultBasicX -- {0..*} FaultBasic;
-      FaultBasicY -- {0..*} FaultBasic;
-    END FaultBasic_FaultBasic;
+	ASSOCIATION Fault_Fault =
+      FaultX -- {0..*} Fault;
+      FaultY -- {0..*} Fault;
+    END Fault_Fault;
 	
 	
 
