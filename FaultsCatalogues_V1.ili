@@ -161,19 +161,6 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
       Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultDBItem;
     END FaultDBRef;
 	
-    /** Codelist für das Attribut Fault.Database_ID = Verweis zu einer ID in einer bestehenden Datenbank
-    */	
-	CLASS FaultDBIDItem
-    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
-      Description : LocalisationCH_V1.MultilingualMText;
-    END FaultDBIDItem;
-
-    STRUCTURE FaultDBIDRef
-    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultDBIDItem;
-    END FaultDBIDRef;
-	
 	
 	
 	/** WEITERFÜHRENDE ATTRIBUTE des Modells Faults

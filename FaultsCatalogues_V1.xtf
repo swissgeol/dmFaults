@@ -231,7 +231,7 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>inexistant/ négligable</Text>
+								<Text>inexistant/ négligeable</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>en</Language>
@@ -331,7 +331,7 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>inexistant/ négligable</Text>
+								<Text>inexistant/ négligeable</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>en</Language>
@@ -381,7 +381,7 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>nappes limitants</Text>
+								<Text>limitant des nappes</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>en</Language>
@@ -406,7 +406,7 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>écailles limitants</Text>
+								<Text>limitants des écailles</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>en</Language>
@@ -456,11 +456,11 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>fr</Language>
-								<Text>système de faille mineur</Text>
+								<Text>système de faille partiel</Text>
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>en</Language>
-								<Text>minor fault system</Text>
+								<Text>subfault system</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
@@ -485,7 +485,7 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>en</Language>
-								<Text>major fault system</Text>
+								<Text>large-scale fault system</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
@@ -561,6 +561,31 @@
 							<LocalisationCH_V1.LocalisedText>
 								<Language>en</Language>
 								<Text>seismology</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FaultIdentItem>
+			<FaultsCatalogues_V1.Catalogues.FaultIdentItem TID="a61d1b20-d154-44e9-a33b-d7ea0590a12a">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Remote Sensing</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>-Remote Sensing</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Remote Sensing</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Remote </Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>
@@ -1960,7 +1985,7 @@
 							</LocalisationCH_V1.LocalisedText>
 							<LocalisationCH_V1.LocalisedText>
 								<Language>en</Language>
-								<Text>linear undifferenciated</Text>
+								<Text>linearly undifferenciated</Text>
 							</LocalisationCH_V1.LocalisedText>
 						</LocalisedText>
 					</LocalisationCH_V1.MultilingualText>

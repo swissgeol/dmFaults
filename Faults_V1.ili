@@ -112,9 +112,9 @@ VERSION "2021-12-15"  =
 	  /** Verweis zu einer bestehenden Datenbank (Bsp. BDMS), in welcher die Störung bereits aufgeführt wird
 	  */
 	  Database : FaultsCatalogues_V1.Catalogues.FaultDBRef; 
-	  /** Verweis zu einer ID in einer bestehenden Datenbank (Bsp. ID einer Bohrung in BDMS)
+	  /** Verweis zu einer ID in einer bestehenden Datenbank wie ID von BDMS, UUIDOID von Geocover
 	  */
-	  Database_ID : FaultsCatalogues_V1.Catalogues.FaultDBIDRef; 
+	  Database_ID : TEXT;
 	  
     
 	
@@ -221,7 +221,7 @@ VERSION "2021-12-15"  =
 	  Neotectonic_Lineation_Plunge : 0.000 .. 90.000 [Units.Angle_Degree]; 
 	  /** Maximale geschätzte Magnitude (z.B. aufgrund Bruchlänge)
 	  */
-	  Activity_Max_Magnitude : 0 .. 100000 [INTERLIS.m];  !!muss noch mit richtiger Einheit ergänzt werden. 
+	  Activity_Max_Magnitude : 0 .. 100000 [INTERLIS.m];  
 	  
 	END Fault; 
 
