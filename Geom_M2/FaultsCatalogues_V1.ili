@@ -8,7 +8,7 @@ INTERLIS 2.3;
 */
 MODEL FaultsCatalogues_V1 (en) 
 AT "mailto:U80863546@localhost" 
-VERSION "2021-12-15" =
+VERSION "2022-01-05" =
 
 
 !!****************************************
@@ -293,6 +293,60 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
       Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultNeotLinKindItem;
     END FaultNeotLinKindRef;
 	
+
+	/** COMPILERS ATTRIBUTES
+	  */
+	/** Codelist für das Attribut Fault.Editor = Name(n) des/r  Bearbeitenden der Störung
+    */
+	CLASS FaultCompEdiItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FaultCompEdiItem;
+	
+	STRUCTURE FaultCompEdiRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultCompEdiItem;
+    END FaultCompEdiRef;		
+	
+	/** Codelist für das Attribut Fault.Editor = Name(n) des/r  Bearbeitenden der Störung
+    */
+	CLASS FaultCompContriItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FaultCompContriItem;
+	
+	STRUCTURE FaultCompContriRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultCompContriItem;
+    END FaultCompContriRef;			
+	
+	/** Codelist für das Attribut Fault.Editor = Name(n) des/r  Kontrollierenden der Störung
+    */
+	CLASS FaultCompControItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FaultCompControItem;
+	
+	STRUCTURE FaultCompControRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultCompControItem;
+    END FaultCompControRef;				
+	
+	/** Codelist für das Attribut Fault.Editor = gelöschte Störung
+    */
+	CLASS FaultCompDelItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FaultCompDelItem;
+	
+	STRUCTURE FaultCompDelRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultCompDelItem;
+    END FaultCompDelRef;	
 	
   END Catalogues;
   

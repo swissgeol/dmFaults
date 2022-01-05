@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis saveUser="U80863546" saveDateTime="2021-12-23T10:41:44" saveUserFull="Amrein Anja swisstopo" projectname="" version="3.16.6-Hannover">
+<qgis saveUser="U80863546" saveDateTime="2021-12-23T10:43:41" saveUserFull="Amrein Anja swisstopo" projectname="" version="3.16.6-Hannover">
   <homePath path=""/>
   <title></title>
   <autotransaction active="0"/>
@@ -37,12 +37,12 @@
     </layer-tree-layer>
     <layer-tree-group expanded="1" checked="Qt::Checked" name="Tabellen">
       <customproperties/>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" name="Fault_Fault" providerKey="ogr" legend_exp="" legend_split_behavior="0" id="Fault_Fault_a450eb99_7a96_402f_af88_5bee9b966599" source="./Faults_V1.gpkg|layername=fault_fault" patch_size="-1,-1">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" name="Fault" providerKey="ogr" legend_exp="" legend_split_behavior="0" id="Fault_2ee813da_a9a6_4d1f_8740_e1ad59956c38" source="./Faults_V1.gpkg|layername=fault" patch_size="-1,-1">
         <customproperties>
           <property key="showFeatureCount" value="false"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" checked="Qt::Checked" name="Fault" providerKey="ogr" legend_exp="" legend_split_behavior="0" id="Fault_2ee813da_a9a6_4d1f_8740_e1ad59956c38" source="./Faults_V1.gpkg|layername=fault" patch_size="-1,-1">
+      <layer-tree-layer expanded="1" checked="Qt::Checked" name="Fault_Fault" providerKey="ogr" legend_exp="" legend_split_behavior="0" id="Fault_Fault_a450eb99_7a96_402f_af88_5bee9b966599" source="./Faults_V1.gpkg|layername=fault_fault" patch_size="-1,-1">
         <customproperties>
           <property key="showFeatureCount" value="false"/>
         </customproperties>
@@ -277,6 +277,7 @@
       <item>LineFault_39ef267c_1ac6_4d85_acb6_23a15936ada1</item>
       <item>PointFault_d9fcd9e4_47d6_4701_a0d9_ac1ed7f6b27c</item>
       <item>Landeskarten__farbig__37103c0b_d6bd_41fd_ad6f_883c7f798e56</item>
+      <item>Fault_2ee813da_a9a6_4d1f_8740_e1ad59956c38</item>
     </custom-order>
   </layer-tree-group>
   <snapping-settings mode="2" minScale="0" maxScale="0" type="1" intersection-snapping="0" scaleDependencyMode="0" enabled="0" unit="1" self-snapping="0" tolerance="12">
@@ -1735,14 +1736,14 @@
       </filegroup>
     </legendlayer>
     <legendgroup checked="Qt::Checked" name="Tabellen" open="true">
-      <legendlayer checked="Qt::Checked" name="Fault_Fault" drawingOrder="-1" open="true" showFeatureCount="0">
-        <filegroup hidden="false" open="true">
-          <legendlayerfile isInOverview="0" visible="1" layerid="Fault_Fault_a450eb99_7a96_402f_af88_5bee9b966599"/>
-        </filegroup>
-      </legendlayer>
       <legendlayer checked="Qt::Checked" name="Fault" drawingOrder="-1" open="true" showFeatureCount="0">
         <filegroup hidden="false" open="true">
           <legendlayerfile isInOverview="0" visible="1" layerid="Fault_2ee813da_a9a6_4d1f_8740_e1ad59956c38"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer checked="Qt::Checked" name="Fault_Fault" drawingOrder="-1" open="true" showFeatureCount="0">
+        <filegroup hidden="false" open="true">
+          <legendlayerfile isInOverview="0" visible="1" layerid="Fault_Fault_a450eb99_7a96_402f_af88_5bee9b966599"/>
         </filegroup>
       </legendlayer>
       <legendlayer checked="Qt::Checked" name="FaultNeotLinKindRef" drawingOrder="-1" open="true" showFeatureCount="0">
@@ -14883,7 +14884,9 @@
         <constraint desc="" exp="" field="areference"/>
       </constraintExpressions>
       <expressionfields/>
-      <attributeactions/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
       <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
         <columns/>
       </attributetableconfig>
@@ -21184,7 +21187,9 @@ def my_form_open(dialog, layer, feature):
         <constraint desc="" exp="" field="T_Seq"/>
       </constraintExpressions>
       <expressionfields/>
-      <attributeactions/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
       <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
         <columns/>
       </attributetableconfig>
@@ -23860,6 +23865,7 @@ def my_form_open(dialog, layer, feature):
     <layer id="LineFault_39ef267c_1ac6_4d85_acb6_23a15936ada1"/>
     <layer id="PointFault_d9fcd9e4_47d6_4701_a0d9_ac1ed7f6b27c"/>
     <layer id="Landeskarten__farbig__37103c0b_d6bd_41fd_ad6f_883c7f798e56"/>
+    <layer id="Fault_2ee813da_a9a6_4d1f_8740_e1ad59956c38"/>
   </layerorder>
   <properties>
     <CopyrightLabel>
@@ -23916,13 +23922,15 @@ def my_form_open(dialog, layer, feature):
     <Variables>
       <variableNames type="QStringList">
         <value></value>
+        <value>adb_intra_admin_ch_swisstopo_appl_data_prod_lg_01_produktion_datenmodell_34_unterstuetzung_tech_modellierung_dm_faults_geom_m2_faults_v1_gpkg</value>
         <value>adb_intra_admin_ch_swisstopo_appl_data_prod_lg_01_produktion_datenmodell_34_unterstuetzung_tech_modellierung_dm_faults_geom_m2_faults_v1_gpkg_faults_v1_faults</value>
         <value>adb_intra_admin_ch_swisstopo_appl_data_prod_lg_01_produktion_datenmodell_34_unterstuetzung_tech_modellierung_dm_faults_geom_m2_faults_v1_gpkg_faultscatalogues_v1_catalogues</value>
       </variableNames>
       <variableValues type="QStringList">
         <value>111</value>
         <value>111</value>
-        <value></value>
+        <value>111</value>
+        <value>3</value>
       </variableValues>
     </Variables>
   </properties>

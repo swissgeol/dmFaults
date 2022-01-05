@@ -207,8 +207,23 @@ VERSION "2021-12-15"  =
 	  Neotectonic_Lineation_Plunge : 0.000 .. 90.000 [Units.Angle_Degree]; 
 	  /** Maximale geschätzte Magnitude (z.B. aufgrund Bruchlänge)
 	  */
-	  Activity_Max_Magnitude : 0 .. 100000 [INTERLIS.m];  
-	  
+	  Activity_Max_Magnitude : 0 .. 100000 [INTERLIS.m];
+
+
+	/** COMPILER ATTRIBUTES
+	  */
+	  /** Name(n) des/r  Bearbeitenden der Störung
+      */  
+	  Editor : FaultsCatalogues_V1.Catalogues.FaultCompEdiRef;
+	    /** Name(n) des/r  Bearbeitenden der Störung
+      */  
+	  Contributor : FaultsCatalogues_V1.Catalogues.FaultCompContriRef;
+	    /** Name(n) des/r  Kontrollierenden der Störung
+      */  
+	  Controller : FaultsCatalogues_V1.Catalogues.FaultCompControRef;
+	    /** gelöschte Störung
+      */  
+	  Deleted : FaultsCatalogues_V1.Catalogues.FaultCompDelRef;
 	  
     END Fault; 
 
