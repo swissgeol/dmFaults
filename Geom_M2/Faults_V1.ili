@@ -54,21 +54,23 @@ VERSION "2021-12-15"  =
 !!****************************************
 
 	CLASS Fault = 
-		/** ID bestehend aus Nummer (und Name) der Störung
-		*/
-		Fault_ID : MANDATORY TEXT;
-		/** Name der Störung aus Literatur 
-		*/
-		Fault_Name : TEXT;
-	  	  
-		/** HIERARCHY ATTRIBUTES
-		*/
-		/** Hierarchiestufe der Störung / des Störungssystems
-		*/
-		Hierarchy : MANDATORY FaultsCatalogues_V1.Catalogues.FaultHierRef;
+      /** ID bestehend aus Nummer (und Name) der Störung
+      */
+	  Fault_ID : MANDATORY TEXT;
+       /** Name der Störung aus Literatur 
+      */
+	  Fault_Name : TEXT;
+
+	/** HIERARCHY ATTRIBUTES
+	  */
+	  /** Hierarchiestufe der Störung / des Störungssystems
+	  */
+	  Hierarchy : MANDATORY FaultsCatalogues_V1.Catalogues.FaultHierRef;
 	END Fault;
 
-	CLASS FaultObject = 
+    CLASS FaultObject (ABSTRACT) =
+
+	
 	/** GRUNDLEGENDE ATTRIBUTE des Modells Faults
     */	  
 	/** IDENTIFICATION ATTRIBUTES
@@ -87,8 +89,7 @@ VERSION "2021-12-15"  =
 	  Horizontal_Movement : MANDATORY FaultsCatalogues_V1.Catalogues.FaultHoriMovRef;
 	  /** Art der Grenze einer tektonischen Einheit wie Deckengrenze, Schuppengrenze oder Zonengrenze
 	  */
-	  Limit_Tectonic_Body : FaultsCatalogues_V1.Catalogues.FaultLimTecBodyRef
-
+	  Limit_Tectonic_Body : FaultsCatalogues_V1.Catalogues.FaultLimTecBodyRef;
 	  
 	/** ORIGIN ATTRIBUTES
 	  */
@@ -247,15 +248,19 @@ VERSION "2021-12-15"  =
 	ASSOCIATION FaultObject_Fault =
 	  FaultObject -- {0..*} FaultObject;
       Fault -- {1} Fault;
-    END FaultObject_Fault;
-
-    /** Störungen, welche in Verbindung stehen (bspw. durch Hierarchy) 
-    */
-	  ASSOCIATION Fault_Fault =
-		Fault_ -- {0..*} Fault;
-		ParentFault -- {0..1} Fault;
-	  END Fault_Fault;
+    END FaultObject_Fault;	
 	
+	/** Störungen, welche in Verbindung stehen (bspw. durch Hierarchy) 
+	*/
+	ASSOCIATION ChildFault_ParentFault =
+	    ChildFault_ -- {0..*} Fault;
+	    ParentFault -- {0..1} Fault;
+
+		MANDATORY CONSTRAINT
+			ChildFault_->Hierarchy->Reference->Name->LocalisedText->Text=="Störung" AND ParentFault->Hierarchy->Reference->Name->LocalisedText->Text=="Teilstörungssystem"
+			OR
+			ChildFault_->Hierarchy->Reference->Name->LocalisedText->Text=="Teilstörungssystem" AND ParentFault->Hierarchy->Reference->Name->LocalisedText->Text=="Grossstörungssystem";
+	END ChildFault_ParentFault;
 
   END Faults;
   
