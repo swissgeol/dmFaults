@@ -53,10 +53,22 @@ VERSION "2021-12-15"  =
 !! CLASSES
 !!****************************************
 
+	CLASS Fault = 
+		/** ID bestehend aus Nummer (und Name) der Störung
+		*/
+		Fault_ID : MANDATORY TEXT;
+		/** Name der Störung aus Literatur 
+		*/
+		Fault_Name : TEXT;
+	  	  
+		/** HIERARCHY ATTRIBUTES
+		*/
+		/** Hierarchiestufe der Störung / des Störungssystems
+		*/
+		Hierarchy : MANDATORY FaultsCatalogues_V1.Catalogues.FaultHierRef;
+	END Fault;
 
-    CLASS Fault =
-
-	
+	CLASS FaultObject = 
 	/** GRUNDLEGENDE ATTRIBUTE des Modells Faults
     */	  
 	/** IDENTIFICATION ATTRIBUTES
@@ -64,13 +76,6 @@ VERSION "2021-12-15"  =
 	  /** Typ der Störung
       */
 	  Kind : MANDATORY FaultsCatalogues_V1.Catalogues.FaultKindRef;
-      /** ID bestehend aus Nummer (und Name) der Störung
-      */
-	  Fault_ID : MANDATORY TEXT;
-       /** Name der Störung aus Literatur 
-      */
-	  Fault_Name : TEXT;
-	  
 	  
 	/** CHARACTERISATION ATTRIBUTES
 	  */
@@ -82,14 +87,7 @@ VERSION "2021-12-15"  =
 	  Horizontal_Movement : MANDATORY FaultsCatalogues_V1.Catalogues.FaultHoriMovRef;
 	  /** Art der Grenze einer tektonischen Einheit wie Deckengrenze, Schuppengrenze oder Zonengrenze
 	  */
-	  Limit_Tectonic_Body : FaultsCatalogues_V1.Catalogues.FaultLimTecBodyRef;
-	  
-	  
-	/** HIERARCHY ATTRIBUTES
-	  */
-	  /** Hierarchiestufe der Störung / des Störungssystems
-	  */
-	  Hierarchy : MANDATORY FaultsCatalogues_V1.Catalogues.FaultHierRef;
+	  Limit_Tectonic_Body : FaultsCatalogues_V1.Catalogues.FaultLimTecBodyRef
 
 	  
 	/** ORIGIN ATTRIBUTES
@@ -225,20 +223,20 @@ VERSION "2021-12-15"  =
       */  
 	  Deleted : FaultsCatalogues_V1.Catalogues.FaultCompDelRef;
 	  
-    END Fault; 
+    END FaultObject; 
 
     CLASS PointFault
-    EXTENDS Fault =
+    EXTENDS FaultObject =
       Geometry : MANDATORY GeometryCHLV95_V1.Coord2;
     END PointFault;
 
     CLASS LineFault
-    EXTENDS Fault =
+    EXTENDS FaultObject =
       Geometry : MANDATORY Line;
     END LineFault;
 
     CLASS SurfaceFault
-    EXTENDS Fault =
+    EXTENDS FaultObject =
       Geometry : MANDATORY Surface;
     END SurfaceFault; 
 
@@ -246,13 +244,17 @@ VERSION "2021-12-15"  =
 !! ASSOCIATIONS
 !!****************************************
 
+	ASSOCIATION FaultObject_Fault =
+	  FaultObject -- {0..*} FaultObject;
+      Fault -- {1} Fault;
+    END FaultObject_Fault;
+
     /** Störungen, welche in Verbindung stehen (bspw. durch Hierarchy) 
     */
-	ASSOCIATION Fault_Fault =
-      FaultX -- {0..*} Fault;
-      FaultY -- {0..*} Fault;
-    END Fault_Fault;
-	
+	  ASSOCIATION Fault_Fault =
+		Fault_ -- {0..*} Fault;
+		ParentFault -- {0..1} Fault;
+	  END Fault_Fault;
 	
 
   END Faults;
