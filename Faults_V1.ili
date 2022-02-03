@@ -8,7 +8,7 @@ INTERLIS 2.3;
 */
 MODEL Faults_V1 (en)
 AT "mailto:U80863546@localhost"
-VERSION "2021-12-15"  =
+VERSION "2022-01-24"  =
 
 
 !!****************************************
@@ -209,7 +209,7 @@ VERSION "2021-12-15"  =
 	/** COMPILER ATTRIBUTES
 	  */
 	  /** Name(n) des/r  Bearbeitenden der Störung */  
-	  Editor : FaultsCatalogues_V1.Catalogues.FOCompEdiRef;
+	  Editor : MANDATORY FaultsCatalogues_V1.Catalogues.FOCompEdiRef;
 	   
 	  /** Name(n) des/r  Bearbeitenden der Störung */  
 	  Contributor : FaultsCatalogues_V1.Catalogues.FOCompContriRef;
@@ -251,11 +251,11 @@ VERSION "2021-12-15"  =
 	ASSOCIATION ChildFault_ParentFault =
 	    ChildFault -- {0..*} Fault;
 	    ParentFault -- {0..1} Fault;
-
+		
 		MANDATORY CONSTRAINT
-			ChildFault->Hierarchy->Reference->Name->LocalisedText->Text=="Störung" AND ParentFault->Hierarchy->Reference->Name->LocalisedText->Text=="Teilstörungssystem"
+			ChildFault->Hierarchy->Reference->ConstraintRef=="fault" AND ParentFault->Hierarchy->Reference->ConstraintRef=="subfault system"
 			OR
-			ChildFault->Hierarchy->Reference->Name->LocalisedText->Text=="Teilstörungssystem" AND ParentFault->Hierarchy->Reference->Name->LocalisedText->Text=="Grossstörungssystem";	
+			ChildFault->Hierarchy->Reference->ConstraintRef=="subfault system" AND ParentFault->Hierarchy->Reference->ConstraintRef=="large-scale fault system";	
 	END ChildFault_ParentFault;
 
   END Faults;
