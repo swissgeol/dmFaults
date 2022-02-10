@@ -8,7 +8,7 @@ INTERLIS 2.3;
 */
 MODEL Faults_V1 (en)
 AT "mailto:U80863546@localhost"
-VERSION "2021-12-15"  =
+VERSION "2022-01-24"  =
 
 
 !!****************************************
@@ -35,7 +35,6 @@ VERSION "2021-12-15"  =
   /** Definition der Geometrietypen
   */
   Line = POLYLINE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2;
-  Area = AREA WITH (STRAIGHTS, ARCS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS > 0.005;
   Surface = SURFACE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS > 0.005;
 
 
@@ -209,7 +208,7 @@ VERSION "2021-12-15"  =
 	/** COMPILER ATTRIBUTES
 	  */
 	  /** Name(n) des/r  Bearbeitenden der Störung */  
-	  Editor : FaultsCatalogues_V1.Catalogues.FOCompEdiRef;
+	  Editor : MANDATORY FaultsCatalogues_V1.Catalogues.FOCompEdiRef;
 	   
 	  /** Name(n) des/r  Bearbeitenden der Störung */  
 	  Contributor : FaultsCatalogues_V1.Catalogues.FOCompContriRef;
@@ -251,11 +250,11 @@ VERSION "2021-12-15"  =
 	ASSOCIATION ChildFault_ParentFault =
 	    ChildFault -- {0..*} Fault;
 	    ParentFault -- {0..1} Fault;
-
+		
 		MANDATORY CONSTRAINT
-			ChildFault->Hierarchy->Reference->Name->LocalisedText->Text=="Störung" AND ParentFault->Hierarchy->Reference->Name->LocalisedText->Text=="Teilstörungssystem"
+			ChildFault->Hierarchy->Reference->Code=="fault" AND ParentFault->Hierarchy->Reference->Code=="subfault system"
 			OR
-			ChildFault->Hierarchy->Reference->Name->LocalisedText->Text=="Teilstörungssystem" AND ParentFault->Hierarchy->Reference->Name->LocalisedText->Text=="Grossstörungssystem";	
+			ChildFault->Hierarchy->Reference->Code=="subfault system" AND ParentFault->Hierarchy->Reference->Code=="large-scale fault system";	
 	END ChildFault_ParentFault;
 
   END Faults;
