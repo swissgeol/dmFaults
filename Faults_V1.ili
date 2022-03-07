@@ -23,9 +23,7 @@ VERSION "2022-01-24"  =
 !! UNITS
 !!****************************************
   UNIT
-  Year [y] = 365 [Units.d];
-  Slip_Rate = (Units.mm/y);
-  
+  Slip_Rate = (Units.mm/INTERLIS.Y);
 
 
 !!****************************************
@@ -252,15 +250,15 @@ VERSION "2022-01-24"  =
 	    ParentFault -- {0..1} Fault;
 		
 		MANDATORY CONSTRAINT
-<<<<<<< HEAD
 			ChildFault->Hierarchy->Reference->Code=="fault" AND ParentFault->Hierarchy->Reference->Code=="subfault system"
 			OR
-			ChildFault->Hierarchy->Reference->Code=="subfault system" AND ParentFault->Hierarchy->Reference->Code=="large-scale fault system";	
-=======
+			ChildFault->Hierarchy->Reference->Code=="subfault system" AND ParentFault->Hierarchy->Reference->Code=="large-scale fault system";
+		
+		MANDATORY CONSTRAINT	
 			ChildFault->Hierarchy->Reference->ConstraintRef=="fault" AND ParentFault->Hierarchy->Reference->ConstraintRef=="subfault system"
 			OR
-			ChildFault->Hierarchy->Reference->ConstraintRef=="subfault system" AND ParentFault->Hierarchy->Reference->ConstraintRef=="large-scale fault system";	
->>>>>>> 666b363e41042b0fad9df3228427b16bccf32aa2
+			ChildFault->Hierarchy->Reference->ConstraintRef=="subfault system" AND ParentFault->Hierarchy->Reference->ConstraintRef=="large-scale fault system";
+			
 	END ChildFault_ParentFault;
 
   END Faults;

@@ -41,11 +41,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */	
 	CLASS FaultHierItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-<<<<<<< HEAD
 	  Code : MANDATORY TEXT; 
-=======
 	  ConstraintRef : MANDATORY TEXT; 
->>>>>>> 666b363e41042b0fad9df3228427b16bccf32aa2
 	  GeolCode : 0 .. 100000000 ; 
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
@@ -64,10 +61,7 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOKindItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-<<<<<<< HEAD
 	  Code : TEXT; 
-=======
->>>>>>> 666b363e41042b0fad9df3228427b16bccf32aa2
 	  GeolCode : 0 .. 100000000; 
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
@@ -85,10 +79,7 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOVertMovItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-<<<<<<< HEAD
 	  Code : TEXT; 
-=======
->>>>>>> 666b363e41042b0fad9df3228427b16bccf32aa2
 	  GeolCode : 0 .. 100000000; 
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
@@ -103,10 +94,7 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOHoriMovItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-<<<<<<< HEAD
 	  Code : TEXT; 
-=======
->>>>>>> 666b363e41042b0fad9df3228427b16bccf32aa2
 	  GeolCode : 0 .. 100000000; 
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
@@ -121,10 +109,7 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */	
 	CLASS FOLimTecBodyItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-<<<<<<< HEAD
 	  Code : TEXT; 
-=======
->>>>>>> 666b363e41042b0fad9df3228427b16bccf32aa2
 	  GeolCode : 0 .. 100000000; 
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
@@ -159,10 +144,7 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */	
 	CLASS FOIDRelItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-<<<<<<< HEAD
 	  Code : TEXT; 
-=======
->>>>>>> 666b363e41042b0fad9df3228427b16bccf32aa2
 	  GeolCode : 0 .. 100000000; 
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
