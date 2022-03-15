@@ -41,7 +41,7 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */	
 	CLASS FaultHierItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-	  ConstraintRef : MANDATORY TEXT; 
+	  Code : MANDATORY TEXT; 
 	  GeolCode : 0 .. 100000000 ; 
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
@@ -60,6 +60,7 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOKindItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+	  Code : TEXT; 
 	  GeolCode : 0 .. 100000000; 
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
@@ -77,6 +78,7 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOVertMovItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+	  Code : TEXT; 
 	  GeolCode : 0 .. 100000000; 
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
@@ -91,6 +93,7 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOHoriMovItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+	  Code : TEXT; 
 	  GeolCode : 0 .. 100000000; 
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
@@ -105,6 +108,7 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */	
 	CLASS FOLimTecBodyItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+	  Code : TEXT; 
 	  GeolCode : 0 .. 100000000; 
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
@@ -125,7 +129,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */	
 	CLASS FOIdentItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
     END FOIdentItem;
 
@@ -138,6 +143,7 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */	
 	CLASS FOIDRelItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+	  Code : TEXT; 
 	  GeolCode : 0 .. 100000000; 
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
@@ -152,7 +158,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */	
 	CLASS FORefItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
     END FORefItem;
 
@@ -165,7 +172,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */	
 	CLASS FODBItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
     END FODBItem;
 
@@ -184,7 +192,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOGenStrItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
     END FOGenStrItem;
 
@@ -197,7 +206,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOGenAziItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
     END FOGenAziItem;
 
@@ -210,7 +220,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOGenDipItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
     END FOGenDipItem;
 
@@ -226,7 +237,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOLinKindItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
     END FOLinKindItem;
 	
@@ -242,7 +254,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOOffIndItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
     END FOOffIndItem;
 	
@@ -255,7 +268,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOOffKindItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
     END FOOffKindItem;
 	
@@ -271,7 +285,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOReactKindItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
     END FOReactKindItem;
 	
@@ -284,7 +299,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOQuatActItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
     END FOQuatActItem;
 	
@@ -297,7 +313,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FONeotLinKindItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
     END FONeotLinKindItem;
 	
@@ -313,7 +330,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOCompEdiItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
     END FOCompEdiItem;
 	
@@ -326,7 +344,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOCompContriItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
     END FOCompContriItem;
 	
@@ -339,7 +358,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOCompControItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
     END FOCompControItem;
 	
@@ -352,7 +372,8 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */
 	CLASS FOCompDelItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
     END FOCompDelItem;
 	

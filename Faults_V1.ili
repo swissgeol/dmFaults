@@ -253,9 +253,9 @@ VERSION "2022-01-24"  =
 	    ParentFault -- {0..1} Fault;
 		
 		MANDATORY CONSTRAINT
-			ChildFault->Hierarchy->Reference->ConstraintRef=="fault" AND ParentFault->Hierarchy->Reference->ConstraintRef=="subfault system"
+			ChildFault->Hierarchy->Reference->Code=="fault" AND ParentFault->Hierarchy->Reference->Code=="subfault system"
 			OR
-			ChildFault->Hierarchy->Reference->ConstraintRef=="subfault system" AND ParentFault->Hierarchy->Reference->ConstraintRef=="large-scale fault system";	
+			ChildFault->Hierarchy->Reference->Code=="subfault system" AND ParentFault->Hierarchy->Reference->Code=="large-scale fault system";	
 	END ChildFault_ParentFault;
 
   END Faults;
