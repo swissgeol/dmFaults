@@ -42,10 +42,7 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
 	CLASS FaultHierItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
 	  Code : MANDATORY TEXT; 
-<<<<<<< HEAD
-=======
 	  ConstraintRef : MANDATORY TEXT; 
->>>>>>> 4769116ba03d8f61a4f68bd5131ff2d63c9d17e6
 	  GeolCode : 0 .. 100000000 ; 
       Name : MANDATORY LocalisationCH_V1.MultilingualText;
       Description : LocalisationCH_V1.MultilingualMText;
@@ -55,6 +52,10 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
       Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultHierItem;
     END FaultHierRef;
+	
+	
+	
+	
 	
 	/** CLASS FaultObject
 	*/
@@ -122,9 +123,6 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
       Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOLimTecBodyItem;
     END FOLimTecBodyRef;	
-	
-	
-	
 	
 	
 	/** ORIGIN ATTRIBUTES
