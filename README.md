@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # DMFaults
 Datenmodell Störungen - Modèle de données failles - Modello di dati faglia - Data model faults 
 
@@ -12,8 +11,6 @@ Die benötigten Objektgeometrien "Line" und "Surface" werden in der Domain defin
 -Fault- setzt die einzelnen FaultObjects in eine hierarchische Beziehung. Es existieren in aufsteigender Reihenfolge Störung, Teilstörungssystem und Grossstörungssystem. Die Assoziation "FaultObject_Fault" beschreibt die Beziehung zwischen den Störungsobjekten und den Störungen, also der tiefsten Hierarchiestufe. Die Assoziation "ChildFault_ParentFault" erlaubt es, die verschiedenen Hierarchiestufen einer Störzone in Verbindung zu bringen.  
 
 -FaultObject- beschreibt ein einzelnes Störungsobjekt. Eine Störung kann dadurch mehrere Störungsobjekte zugeordnet bekommen, welche sich durch ihre verschiedenen Erfassungsmethoden unterscheiden. Eine einzelne Störung kann so mehrere Messungen umfassen wie bspw. eine Kartierung und eine Bohrungmessung gleichzeitig. Zum Objekt werden der Typ der Störung, die Bewegungsrichtungen, Grenzbeziehungen zu Decken- oder Schuppengrenzen, Erfassungsdetails, Extensionsparameter, Orientierungsparameter, lineare Strukturen, Versatzverhältnisse, Beziehungen zu erfassten Erdbeben, tektonische Reaktivierungsprozesse und die Personalien der Bearbeitenden erfasst. 
-
-
 
 
 Anleitung zur Erstellung der Datenbank und QGIS Projekt:
@@ -38,7 +35,7 @@ Vorgehen zum Erstellen des QGIS-Projektes zur Datenerfassung:
 	- als .qgs speichern 
 - Wertekatalog hereinladen: 
 	- .xml Katalog im Editor öffnen; BID von Katalog im Projekt Faults_V1.qgs (TID No3) kopieren und in xml abändern, damit derselbe Katalog-Basket bei Import gebraucht wird. 
-=======
+
 # dmFaults
 Datenmodell Störungen - Modèle de données failles - Modello di dati faglia - Data model faults 
 
@@ -51,7 +48,6 @@ Die benötigten Objektgeometrien `Line` und `Surface` werden in der Domain defin
 `Fault` setzt die einzelnen FaultObjects in eine hierarchische Beziehung. Es existieren in aufsteigender Reihenfolge Störung, Teilstörungssystem und Grossstörungssystem. Die Assoziation `FaultObject_Fault` beschreibt die Beziehung zwischen den Störungsobjekten und den Störungen, also der tiefsten Hierarchiestufe. Die Assoziation `ChildFault_ParentFault` erlaubt es, die verschiedenen Hierarchiestufen einer Störzone in Verbindung zu bringen.  
 
 `FaultObject` beschreibt ein einzelnes Störungsobjekt. Eine Störung kann dadurch mehrere Störungsobjekte zugeordnet bekommen, welche sich durch ihre verschiedenen Erfassungsmethoden unterscheiden. Eine einzelne Störung kann so mehrere Messungen umfassen wie bspw. eine Kartierung und eine Bohrmessung gleichzeitig. Zum Objekt werden der Typ der Störung, die Bewegungsrichtungen, Grenzbeziehungen zu Decken- oder Schuppengrenzen, Erfassungsdetails, Extensionsparameter, Orientierungsparameter, lineare Strukturen, Versatzverhältnisse, Beziehungen zu erfassten Erdbeben, tektonische Reaktivierungsprozesse und die Personalien der Bearbeitenden erfasst.  
-
 
 ### Anleitung zur Erstellung der Datenbank und QGIS Projekt:
 
@@ -74,7 +70,6 @@ Hinweis zum Validitäts-Check: ili-Files werden direkt im Model Baker auf Syntax
 	- als .qgs speichern 
 - Wertekatalog hereinladen: 
 	- .xml Katalog im Editor öffnen; BID von Katalog im Projekt *Faults_V1.qgs* (TID No3) kopieren und in xml abändern, damit derselbe Katalog-Basket bei Import gebraucht wird. 
->>>>>>> 4769116ba03d8f61a4f68bd5131ff2d63c9d17e6
 	- speichern 
 	- per Wizard .xml Datei hereinladen
 	- gesamtes Projekt speichern 
@@ -82,7 +77,6 @@ Hinweis zum Validitäts-Check: ili-Files werden direkt im Model Baker auf Syntax
 	- Fault Objects auf rote Farbe abändern 
 	- Landeskarten (farbig) hinzufügen unter Layer --> Add Layer --> Add WMS/WMTS layer 
 	- Constraints überprüfen : Mandatory Values aus .ili werden nicht so übertragen ins Form: müssen unter Layer setting (Doppelklick auf Layer) --> Attributformular --> Constraints zu "Nicht NULL" abgeändert werden. 
-<<<<<<< HEAD
 	- in FaultObjects (allen Geometrien) Werte jeweils als "NULL-Werte erlauben" (damit keine automatischen Antworten generiert werden)
 - Testen: 
 	- Faults und FaultObjects erfassen und mit Data Validator testen --> Erfassung der Objekte immer in Basket Faults 
@@ -102,7 +96,6 @@ The required object geometries "Line" and "Surface" are defined in the domain, "
 -Fault- places the individual FaultObjects in a hierarchical relationship. Fault, subfault system and major fault system exist in ascending order. The association "FaultObject_Fault" describes the relationship between the fault objects and the faults, i.e. the lowest hierarchical level. The association "ChildFault_ParentFault" allows to relate the different hierarchy levels of a fault zone.  
 
 -FaultObject- describes a single fault object. A fault can thus have several fault objects assigned to it, which are distinguished by their different acquisition methods. A single fault can comprise several measurements, such as a mapping and a borehole measurement at the same time. For the object, the type of fault, the directions of movement, limit relations to slab or scale boundaries, acquisition details, extension parameters, orientation parameters, linear structures, offset relations, relations to recorded earthquakes, tectonic reactivation processes and the data of the person working on the fault can be recorded. 
-=======
 	- in `FaultObjects` (allen Geometrien) Werte jeweils als "NULL-Werte erlauben" (damit keine automatischen Antworten generiert werden)
 - Testen: 
 	- Faults und FaultObjects erfassen und mit Data Validator testen --> Erfassung der Objekte immer in Basket Faults 
@@ -119,12 +112,8 @@ The required object geometries `Line` and `Surface` are defined in the domain, `
 `Fault` places the individual FaultObjects in a hierarchical relationship. Fault, subfault system and major fault system exist in ascending order. The association `FaultObject_Fault` describes the relationship between the fault objects and the faults, i.e. the lowest hierarchical level. The association `ChildFault_ParentFault` allows to relate the different hierarchy levels of a fault zone.  
 
 `FaultObject` describes a single fault object. A fault can thus have several fault objects assigned to it, which are distinguished by their different acquisition methods. A single fault can comprise several measurements, such as a mapping and a borehole measurement at the same time. For the object, the type of fault, the directions of movement, limit relations to slab or scale boundaries, acquisition details, extension parameters, orientation parameters, linear structures, offset relations, relations to recorded earthquakes, tectonic reactivation processes and the data of the person working on the fault can be recorded. 
->>>>>>> 4769116ba03d8f61a4f68bd5131ff2d63c9d17e6
 
 
-
-
-<<<<<<< HEAD
 Instructions for the creation of the database and QGIS project:
 ########################################################
 
@@ -133,7 +122,7 @@ Note on the validity check: .ili files are checked for syntax and errors directl
 Procedure for creating the catalogue: 
 - Open QGIS project and load Faults_V1.ili and FaultsCatalogues_V1.ili. 
 	- Open a geopackage named FaultsCatalogues_V1.gpkg as database.
-=======
+		
 ### Instructions for the creation of the database and QGIS project:
 
 Note on the validity check: .ili files are checked for syntax and errors directly in Model Baker, so it is not mandatory to check them with ili2c. The data are read in via Modelbaker as models. XML catalogue data can also be read in the wizard. 
@@ -141,7 +130,6 @@ Note on the validity check: .ili files are checked for syntax and errors directl
 ##### Procedure for creating the catalogue: 
 - Open QGIS project and load *Faults_V1.ili* and *FaultsCatalogues_V1.ili*. 
 	- Open a geopackage named *FaultsCatalogues_V1.gpkg* as database.
->>>>>>> 4769116ba03d8f61a4f68bd5131ff2d63c9d17e6
 	- Baskets for the baseset are created automatically. If this will not be the case, further baskets could be created via "Dataset Manager". Baskets help to keep the data organised. It is advisable to always work with baskets. 
 - Then save the project as FaultsCatalogues.qgs file. 
 - Open the QGIS project in the editor and change readOnly="1" to readOnly="0" using the search function (mandatory for items and multilingual text tables). 
@@ -149,7 +137,6 @@ Note on the validity check: .ili files are checked for syntax and errors directl
 	- under "Database" --> Model Baker --> Model Baker Data Validator check again and again for constraint and input errors. 
 	- Export and check the .xml of the attribute values. 
 
-<<<<<<< HEAD
 Procedure for creating the QGIS project for data acquisition: 
 - Open QGIS project and load Faults_V1.ili and FaultsCatalogues_V1.ili. 
 	- Open a geopackage named Faults_V1.gpkg as database.
@@ -157,7 +144,7 @@ Procedure for creating the QGIS project for data acquisition:
 	- save as .qgs 
 - Load value catalogue: 
 	- Open .xml catalogue in editor; copy BID from catalogue in Faults_V1.qgs project (TID No3) and change to xml so that the same catalogue basket is used on import. 
-=======
+	
 ##### Procedure for creating the QGIS project for data acquisition: 
 - Open QGIS project and load *Faults_V1.ili* and *FaultsCatalogues_V1.ili*. 
 	- Open a geopackage named *Faults_V1.gpkg* as database.
@@ -165,7 +152,7 @@ Procedure for creating the QGIS project for data acquisition:
 	- save as .qgs 
 - Load value catalogue: 
 	- Open .xml catalogue in editor; copy BID from catalogue in *Faults_V1.qgs* project (TID No3) and change to xml so that the same catalogue basket is used on import. 
->>>>>>> 4769116ba03d8f61a4f68bd5131ff2d63c9d17e6
+
 	- Save 
 	- Load .xml file via wizard
 	- Save the whole project 

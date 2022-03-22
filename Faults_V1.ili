@@ -248,22 +248,16 @@ VERSION "2022-01-24"  =
 	ASSOCIATION ChildFault_ParentFault =
 	    ChildFault -- {0..*} Fault;
 	    ParentFault -- {0..1} Fault;
-		
 		MANDATORY CONSTRAINT
 			ChildFault->Hierarchy->Reference->Code=="fault" AND ParentFault->Hierarchy->Reference->Code=="subfault system"
-<<<<<<< HEAD
 			OR
 			ChildFault->Hierarchy->Reference->Code=="subfault system" AND ParentFault->Hierarchy->Reference->Code=="large-scale fault system";	
-=======
 			OR
-			ChildFault->Hierarchy->Reference->Code=="subfault system" AND ParentFault->Hierarchy->Reference->Code=="large-scale fault system";
-		
+			ChildFault->Hierarchy->Reference->Code=="subfault system" AND ParentFault->Hierarchy->Reference->Code=="large-scale fault system"
 		MANDATORY CONSTRAINT	
 			ChildFault->Hierarchy->Reference->ConstraintRef=="fault" AND ParentFault->Hierarchy->Reference->ConstraintRef=="subfault system"
 			OR
 			ChildFault->Hierarchy->Reference->ConstraintRef=="subfault system" AND ParentFault->Hierarchy->Reference->ConstraintRef=="large-scale fault system";
-			
->>>>>>> 4769116ba03d8f61a4f68bd5131ff2d63c9d17e6
 	END ChildFault_ParentFault;
 
   END Faults;
