@@ -1,0 +1,389 @@
+INTERLIS 2.3;
+
+
+!!****************************************
+!! MODEL
+!!****************************************
+/** Datenmodell für die Beschreibung der Wertetabelle (Kataloge) des Faults
+*/
+MODEL FaultsCatalogues_V1 (en) 
+AT "mailto:U80863546@localhost" 
+VERSION "2022-01-24" =
+
+
+!!****************************************
+!! IMPORTS
+!!****************************************
+IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
+
+
+!!****************************************
+!! TOPIC 
+!!****************************************
+  /** Topic für Datenmodell FaultsCatalogues
+  Definition einer UUID für alle Klassen des Modells
+  */
+  TOPIC Catalogues =
+    OID AS INTERLIS.UUIDOID;
+
+
+!!****************************************
+!! CATALOGUES-ITEMS
+!!****************************************
+
+    /** GRUNDLEGENDE ATTRIBUTE des Modells Faults
+    */
+	/** CLASS Fault
+	*/
+	/** HIERARCHY ATTRIBUTES
+	*/
+	/** Codelist für das Attribut Fault.Hierarchy = Hierarchiestufe der Störung / des Störungssystems
+    */	
+	CLASS FaultHierItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+	  Code : MANDATORY TEXT; 
+	  ConstraintRef : MANDATORY TEXT; 
+	  GeolCode : 0 .. 100000000 ; 
+      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FaultHierItem;
+
+    STRUCTURE FaultHierRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultHierItem;
+    END FaultHierRef;
+	
+	
+	
+	
+	
+	/** CLASS FaultObject
+	*/
+	/** IDENTIFICATION ATTRIBUTES
+	  */
+	/** Codelist für das Attribut FO.Kind = Typ der Störung (Überschiebung, Aufschiebung, ...)
+    */
+	CLASS FOKindItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+	  Code : TEXT; 
+	  GeolCode : 0 .. 100000000; 
+      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOKindItem;
+
+    STRUCTURE FOKindRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOKindItem;
+    END FOKindRef;
+	
+	
+	/** CHARACTERISATION ATTRIBUTES
+	  */
+	/** Codelist für das Attribut FO.Vertical_Movement = Bewegung parallel der Fallrichtung der Störung
+    */
+	CLASS FOVertMovItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+	  Code : TEXT; 
+	  GeolCode : 0 .. 100000000; 
+      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOVertMovItem;
+
+    STRUCTURE FOVertMovRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOVertMovItem;
+    END FOVertMovRef;
+	
+	/** Codelist für das Attribut FO.Horizontal_Movement = Bewegung parallel der Streichrichtung der Störung
+    */
+	CLASS FOHoriMovItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+	  Code : TEXT; 
+	  GeolCode : 0 .. 100000000; 
+      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOHoriMovItem;
+
+    STRUCTURE FOHoriMovRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOHoriMovItem;
+    END FOHoriMovRef;
+	
+	/** Codelist für das Attribut FO.Limit_Tectonic_Body = Art der Grenze einer tektonischen Einheit wie Deckengrenze, Schuppengrenze oder Zonengrenze
+    */	
+	CLASS FOLimTecBodyItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+	  Code : TEXT; 
+	  GeolCode : 0 .. 100000000; 
+      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOLimTecBodyItem;
+
+    STRUCTURE FOLimTecBodyRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOLimTecBodyItem;
+    END FOLimTecBodyRef;	
+	
+	
+	/** ORIGIN ATTRIBUTES
+	*/
+	/** Codelist für das Attribut FO.Identification = Erfassungsmethode der Störung
+    */	
+	CLASS FOIdentItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOIdentItem;
+
+    STRUCTURE FOIdentRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOIdentItem;
+    END FOIdentRef;
+	
+	/** Codelist für das Attribut FO.Identification_Reliability = Zuverlässigkeit der Erfassungsmethode der Störung
+    */	
+	CLASS FOIDRelItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+	  Code : TEXT; 
+	  GeolCode : 0 .. 100000000; 
+      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOIDRelItem;
+
+    STRUCTURE FOIDRelRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOIDRelItem;
+    END FOIDRelRef;
+	
+	/** Codelist für das Attribut FO.Reference = Verweis zur Datenherkunft
+    */	
+	CLASS FORefItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FORefItem;
+
+    STRUCTURE FORefRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FORefItem;
+    END FORefRef;	
+	
+	/** Codelist für das Attribut FO.Database = Verweis zu einer bestehenden Datenbank (Bsp. BDMS)
+    */	
+	CLASS FODBItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FODBItem;
+
+    STRUCTURE FODBRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FODBItem;
+    END FODBRef;
+	
+	
+	
+	/** WEITERFÜHRENDE ATTRIBUTE des Modells FOs
+    */
+	/** ORIENTATION ATTRIBUTES
+	  */
+	/** Codelist für das Attribut FO.General_Strike = Generelle Streichrichtung einer Störungsfläche 
+    */
+	CLASS FOGenStrItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOGenStrItem;
+
+    STRUCTURE FOGenStrRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOGenStrItem;
+    END FOGenStrRef;
+	
+	/** Codelist für das Attribut FO.General_Azimuth = Generelle Fallrichtung einer Störungsfläche 
+    */
+	CLASS FOGenAziItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOGenAziItem;
+
+    STRUCTURE FOGenAziRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOGenAziItem;
+    END FOGenAziRef;
+	
+	/** Codelist für das Attribut FO.General_Dip = Genereller Fallwinkel einer Störungsfläche 
+    */
+	CLASS FOGenDipItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOGenDipItem;
+
+    STRUCTURE FOGenDipRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOGenDipItem;
+    END FOGenDipRef;	
+	
+	
+	/** LINEAR_STRUCTURES ATTRIBUTES
+	  */
+	/** Codelist für das Attribut FO.Lineation_Kind = Lineationstypen auf einer Störungsfläche 
+    */
+	CLASS FOLinKindItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOLinKindItem;
+	
+	STRUCTURE FOLinKindRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOLinKindItem;
+    END FOLinKindRef;
+	
+	
+	/** OFFSET ATTRIBUTES
+	  */
+	/** Codelist für das Attribut FO.Offset_Indicator = Versatzindikator 
+    */
+	CLASS FOOffIndItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOOffIndItem;
+	
+	STRUCTURE FOOffIndRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOOffIndItem;
+    END FOOffIndRef;
+	
+	/** Codelist für das Attribut FO.Offset_Kind = Versatzart 
+    */
+	CLASS FOOffKindItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOOffKindItem;
+	
+	STRUCTURE FOOffKindRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOOffKindItem;
+    END FOOffKindRef;
+	
+	
+	/** NEOTECTONICS ATTRIBUTES
+	  */
+	/** Codelist für das Attribut FO.Reactivation_Kind = Typ der reaktivierten Störung anhand der Bewegungsrichtung
+    */
+	CLASS FOReactKindItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOReactKindItem;
+	
+	STRUCTURE FOReactKindRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOReactKindItem;
+    END FOReactKindRef;	
+	
+	/** Codelist für das Attribut FO.Reactivation_Indicator_For_Quaternary_Activity = Indikatoren für die neotektonische Aktivität der Störung
+    */
+	CLASS FOQuatActItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOQuatActItem;
+	
+	STRUCTURE FOQuatActRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOQuatActItem;
+    END FOQuatActRef;
+	
+	/** Codelist für das Attribut FO.Neotectonic_Lineation_Kind = Lineationstypen auf einer Störungsfläche
+    */
+	CLASS FONeotLinKindItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FONeotLinKindItem;
+	
+	STRUCTURE FONeotLinKindRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FONeotLinKindItem;
+    END FONeotLinKindRef;
+	
+
+	/** COMPILERS ATTRIBUTES
+	  */
+	/** Codelist für das Attribut FO.Editor = Name(n) des/r  Bearbeitenden der Störung
+    */
+	CLASS FOCompEdiItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOCompEdiItem;
+	
+	STRUCTURE FOCompEdiRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOCompEdiItem;
+    END FOCompEdiRef;		
+	
+	/** Codelist für das Attribut FO.Editor = Name(n) des/r  Bearbeitenden der Störung
+    */
+	CLASS FOCompContriItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOCompContriItem;
+	
+	STRUCTURE FOCompContriRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOCompContriItem;
+    END FOCompContriRef;			
+	
+	/** Codelist für das Attribut FO.Editor = Name(n) des/r  Kontrollierenden der Störung
+    */
+	CLASS FOCompControItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOCompControItem;
+	
+	STRUCTURE FOCompControRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOCompControItem;
+    END FOCompControRef;				
+	
+	/** Codelist für das Attribut FO.Editor = gelöschte Störung
+    */
+	CLASS FOCompDelItem
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
+      Code : TEXT; 
+	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      Description : LocalisationCH_V1.MultilingualMText;
+    END FOCompDelItem;
+	
+	STRUCTURE FOCompDelRef
+    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
+      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOCompDelItem;
+    END FOCompDelRef;	
+	
+  END Catalogues;
+  
+END FaultsCatalogues_V1.
