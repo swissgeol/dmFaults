@@ -41,7 +41,7 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     */	
 	CLASS FaultHierItem
     EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-	  Code : MANDATORY TEXT; 
+	  Code : TEXT; 
 	  ConstraintRef : MANDATORY TEXT; 
 	  GeolCode : 0 .. 100000000 ; 
       Name : MANDATORY LocalisationCH_V1.MultilingualText;

@@ -1,111 +1,2639 @@
-<?xml version="1.0" encoding="UTF-8"?><TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
-<HEADERSECTION SENDER="ili2gpkg-4.6.1-63db90def1260a503f0f2d4cb846686cd4851184" VERSION="2.3"><MODELS><MODEL NAME="CatalogueObjectTrees_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"></MODEL><MODEL NAME="CatalogueObjects_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"></MODEL><MODEL NAME="FaultsCatalogues_V1" VERSION="2022-01-24" URI="mailto:U80863546@localhost"></MODEL></MODELS></HEADERSECTION>
-<DATASECTION>
-<FaultsCatalogues_V1.Catalogues BID="613a7adc-0ab6-482e-800d-875590d88868">
-<FaultsCatalogues_V1.Catalogues.FaultHierItem TID="ef1db8ba-084a-447e-a1c1-3bb351b2b076"><IsSuperItem>true</IsSuperItem><IsUseable>true</IsUseable><ConstraintRef>fault</ConstraintRef><GeolCode>14911001</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>fault</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Störung</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>faille</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>fault</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FaultHierItem>
-<FaultsCatalogues_V1.Catalogues.FaultHierItem TID="38dfc433-5f3e-450c-aabf-d56a933df98c"><IsSuperItem>true</IsSuperItem><IsUseable>true</IsUseable><ConstraintRef>subfault system</ConstraintRef><GeolCode>14911002</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>subfault system</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Teilstörungsstystem</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>système de faille partiel</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>subfault system</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FaultHierItem>
-<FaultsCatalogues_V1.Catalogues.FaultHierItem TID="4d07147c-e48a-4aa8-ae61-be5c648330a8"><IsSuperItem>true</IsSuperItem><IsUseable>true</IsUseable><ConstraintRef>large-scale fault system</ConstraintRef><GeolCode>14911003</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>large-scale fault system</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Grossstörungssystem</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>système de faille majeur</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>large-scale fault system</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FaultHierItem>
-<FaultsCatalogues_V1.Catalogues.FOKindItem TID="fc9fac4e-4363-42b0-8df8-9262dfdedb1c"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>14901005</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>reverse fault</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Aufschiebung</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>faille inverse</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>reverse fault</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOKindItem>
-<FaultsCatalogues_V1.Catalogues.FOKindItem TID="f68c3083-0649-4981-afd5-e69aa3c51aa6"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>14901001</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>overthrust</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Überschiebung</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>chevauchement</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>overthrust</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOKindItem>
-<FaultsCatalogues_V1.Catalogues.FOKindItem TID="b5003bac-252d-471a-83e2-5290e194b202"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>14901006</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>strike-slip fault</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Blattverschiebung</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>décrochement</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>strike-slip fault</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOKindItem>
-<FaultsCatalogues_V1.Catalogues.FOKindItem TID="c9200634-6a6f-41af-b2bd-266cf28bf614"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>14901002</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>normal fault</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Abschiebung </Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>faille normale </Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>normal fault</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOKindItem>
-<FaultsCatalogues_V1.Catalogues.FOKindItem TID="3c5b3976-f725-40ec-b708-0e2c061382c4"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>14901007</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>complex fault</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>komplexe Störung </Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>faille complexe</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>complex fault</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOKindItem>
-<FaultsCatalogues_V1.Catalogues.FOKindItem TID="d97e6aa8-b38d-4f92-b910-db1e869e6bd4"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>14901008</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>general fault</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Störung im Allgemeinen</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>faille générale</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>general fault</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOKindItem>
-<FaultsCatalogues_V1.Catalogues.FOVertMovItem TID="f95d5658-836c-4776-b48e-53b9ab2a153d"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>14903001</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>inverted</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>aufschiebend</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>inverse</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>inverted</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOVertMovItem>
-<FaultsCatalogues_V1.Catalogues.FOVertMovItem TID="d2b1f796-507c-4544-ba4f-b03e64a4b64a"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>9999997</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>unknown</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>unbekannt</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>inconnu</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>unknown</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOVertMovItem>
-<FaultsCatalogues_V1.Catalogues.FOVertMovItem TID="210f86e3-fdeb-453d-adfa-c2ee3dabcc3d"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>14903002</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>normal</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>abschiebend</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>normale</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>normal</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOVertMovItem>
-<FaultsCatalogues_V1.Catalogues.FOVertMovItem TID="2b03daa8-22a7-4520-8f1c-1d28b8f681e6"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>9999998</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>non-existent / negligible</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>nicht vorhanden / vernachlässigbar</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>inexistant / négligeable</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>non-existent / negligible</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOVertMovItem>
-<FaultsCatalogues_V1.Catalogues.FOHoriMovItem TID="be8464e9-382d-4a0f-8638-d4751bd9712e"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>1490402</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>sinistral</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>sinistral</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>sénestre</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>sinistral</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOHoriMovItem>
-<FaultsCatalogues_V1.Catalogues.FOHoriMovItem TID="87e2b570-85f0-4e98-93a6-0ffe156753b2"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>9999998</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>non-existent / négligible</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>nicht vorhanden / vernachlässigbar</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>inexistant / négligeable</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>non-existent / négligible</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOHoriMovItem>
-<FaultsCatalogues_V1.Catalogues.FOHoriMovItem TID="35673a38-ea22-4925-a6a8-e44dc74f5600"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>14904001</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>dextral</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>dextral</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>dextre</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>dextral</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOHoriMovItem>
-<FaultsCatalogues_V1.Catalogues.FOHoriMovItem TID="f5b0c743-9500-4e8d-9d2b-79039986fac4"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>9999997</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>unknown</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>unbekannt</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>inconnu</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>unknown</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOHoriMovItem>
-<FaultsCatalogues_V1.Catalogues.FOLimTecBodyItem TID="cf67dce2-306e-4ebc-a9ed-7a3cf16ca844"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>14910001</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>limiting nappes</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Decken trennend</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>limitant des nappes</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>limiting nappes</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOLimTecBodyItem>
-<FaultsCatalogues_V1.Catalogues.FOLimTecBodyItem TID="f8c46dcd-6fd5-4ad8-a826-251d8af04b5a"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>14910002</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>limiting imbricates</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Schuppen trennend</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>limitant des écailles</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>limiting imbricates</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOLimTecBodyItem>
-<FaultsCatalogues_V1.Catalogues.FOIdentItem TID="c65c3ab9-d039-4450-8d36-80bd96d4805f"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>cartography</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Kartierung</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>cartographie</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>cartography</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOIdentItem>
-<FaultsCatalogues_V1.Catalogues.FOIdentItem TID="cfffb8ee-d4d1-4955-a3c0-91e8f25e677a"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>seismology</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Seismik</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>sismologie</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>seismology</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOIdentItem>
-<FaultsCatalogues_V1.Catalogues.FOIdentItem TID="53cebe01-207a-42e9-989f-756804ab5a51"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>borehole</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Bohrung</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>forage</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>borehole</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOIdentItem>
-<FaultsCatalogues_V1.Catalogues.FOIdentItem TID="7f788dca-e872-4864-8345-121e3d51d3d7"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>field measurement</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Feldmessung</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>mesure de terrain</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>field measurement</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOIdentItem>
-<FaultsCatalogues_V1.Catalogues.FOIdentItem TID="3e74e5b1-c143-4993-8e39-31a6b0ef804a"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>geological cross-sections</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>geologische Profile</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>coupes géologiques</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>geological cross-sections</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOIdentItem>
-<FaultsCatalogues_V1.Catalogues.FOIdentItem TID="71c4bc35-ad21-4566-bf08-7ef019cd6dae"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Remote Sensing</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Remote Sensing</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Remote Sensing</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Remote Sensing</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOIdentItem>
-<FaultsCatalogues_V1.Catalogues.FOIdentItem TID="3c87b6cf-21b3-4c85-b960-c057175dfa75"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>modelling</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Modellierung</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>modélisation</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>modelling</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOIdentItem>
-<FaultsCatalogues_V1.Catalogues.FOIDRelItem TID="0e56e258-9f49-477d-a627-ee79d1d01b5a"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>calculated / modelled</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>berechnet / modelliert</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>calculé / modellé</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>calculated / modelled</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOIDRelItem>
-<FaultsCatalogues_V1.Catalogues.FOIDRelItem TID="3265186a-a9f4-45da-8a24-99cda9d83f54"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>conceptual</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>konzeptuell</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>conceptuel</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>conceptual</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOIDRelItem>
-<FaultsCatalogues_V1.Catalogues.FOIDRelItem TID="d1d2c8c6-8a4c-402e-944a-1f7ec4d385cb"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>14906001</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>assured</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>gesichert</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>certain</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>assured</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOIDRelItem>
-<FaultsCatalogues_V1.Catalogues.FOIDRelItem TID="a498e51b-1f22-4bae-acde-1026cfcad291"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>14906003</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>supposed</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>vermutet</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>probable</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>supposed</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOIDRelItem>
-<FaultsCatalogues_V1.Catalogues.FOIDRelItem TID="670fa7ec-3344-40e7-ae41-4aa074fb0bf2"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><GeolCode>9999997</GeolCode><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>unknown</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>unbekannt</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>inconnu</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>unknown</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOIDRelItem>
-<FaultsCatalogues_V1.Catalogues.FORefItem TID="dc2e74fd-3edd-40a6-8004-0ebff6eca6e9"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>swisstopo</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>swisstopo</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>swisstopo</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>swisstopo</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FORefItem>
-<FaultsCatalogues_V1.Catalogues.FORefItem TID="43053c41-2545-42b9-9eaf-7c4661897cd0"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>University of Berne</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Universität Bern</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Université de Berne</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>University of Berne</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FORefItem>
-<FaultsCatalogues_V1.Catalogues.FORefItem TID="30bba65c-0e34-4679-a5c2-7d8d9712e031"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>University of Fribourg</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Universität Freiburg</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Université de Fribourg</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>University of Fribourg</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FORefItem>
-<FaultsCatalogues_V1.Catalogues.FORefItem TID="867903b3-216f-483b-aa6d-75f8753d4b49"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Pfiffner et al. (2017)</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Pfiffner et al. (2017)</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Pfiffner et al. (2017)</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Pfiffner et al. (2017)</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FORefItem>
-<FaultsCatalogues_V1.Catalogues.FODBItem TID="be69b2d9-4b6e-4148-831c-56b430800829"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>GeoCover</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>GeoCover</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>GeoCover</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>GeoCover</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FODBItem>
-<FaultsCatalogues_V1.Catalogues.FODBItem TID="e5b1d7ad-d1bd-4f67-b03a-b30b50abc89a"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>GeoMol</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>GeoMol</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>GeoMol</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>GeoMol</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FODBItem>
-<FaultsCatalogues_V1.Catalogues.FODBItem TID="9ef22cd7-d932-4b87-b489-b4c194d1b64d"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>BDMS</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>BDMS</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>BDMS</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>BDMS</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FODBItem>
-<FaultsCatalogues_V1.Catalogues.FODBItem TID="29122197-becc-4900-9a78-e5eceb0e5c67"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>initial data acquisition</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Ersterfassung</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>acquisition initiale</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>initial data acquisition</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FODBItem>
-<FaultsCatalogues_V1.Catalogues.FODBItem TID="17461bc0-1640-4108-adc2-366b10624621"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>SeismoTeCH Atlas</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>SeismoTeCH Atlas</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Atlas SeismoTeCH </Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>SeismoTeCH Atlas</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FODBItem>
-<FaultsCatalogues_V1.Catalogues.FODBItem TID="dca81400-7ac8-4c7d-85f7-9e774b62a7d5"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Tectonic Atlas</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Tektonischer Atlas</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Atlas tectonique</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Tectonic Atlas</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FODBItem>
-<FaultsCatalogues_V1.Catalogues.FOGenStrItem TID="7dfb77b2-cf30-4ceb-a7fe-0d4be13fc036"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>NE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>NO</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>NE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>NE</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenStrItem>
-<FaultsCatalogues_V1.Catalogues.FOGenStrItem TID="cbe82551-5812-418e-895d-da07719af570"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>SSE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>SSO</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>SSE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>SSE</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenStrItem>
-<FaultsCatalogues_V1.Catalogues.FOGenStrItem TID="0bb1fdb3-9f54-4101-ba47-43fab9e0fa2e"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>ESE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>OSO</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>ESE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>ESE</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenStrItem>
-<FaultsCatalogues_V1.Catalogues.FOGenStrItem TID="3da170a2-2bfd-49db-9384-3496378e14b0"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>SE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>SO</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>SE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>SE</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenStrItem>
-<FaultsCatalogues_V1.Catalogues.FOGenStrItem TID="4d077832-ff12-43b8-bc26-4ea9e301a12a"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>N</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>N</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>N</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>N</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenStrItem>
-<FaultsCatalogues_V1.Catalogues.FOGenStrItem TID="07967c7e-d82b-4e42-9ee6-51ae874dabb8"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>NNE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>NNO</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>NNE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>NNE</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenStrItem>
-<FaultsCatalogues_V1.Catalogues.FOGenStrItem TID="18b2830b-2140-48ff-98d7-c0c968856523"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>ENE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>ONO</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>ENE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>ENE</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenStrItem>
-<FaultsCatalogues_V1.Catalogues.FOGenStrItem TID="bfeb3eef-b8f0-4658-83d2-a6ea934f00e6"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>E</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>O</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>E</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>E</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenStrItem>
-<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="3cbdd916-701c-4765-9987-5b05cbedf3ca"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>N</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>N</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>N</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>N</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenAziItem>
-<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="f8c83bfa-264e-43aa-aac9-a51bf3df9836"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>ENE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>ONO</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>ENE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>ENE</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenAziItem>
-<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="4a1c6418-cf1a-4bf9-b360-a78a0f884121"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>E</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>O</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>E</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>E</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenAziItem>
-<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="af36e35b-1f3b-4e76-a8af-c8efcfb9ff87"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>NNE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>NNO</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>NNE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>NNE</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenAziItem>
-<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="d70f0ca6-aa4b-4e00-a7c4-e4c8aa8f6322"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>NE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>NO</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>NE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>NE</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenAziItem>
-<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="d25bb3ec-0190-4247-95a9-ad5f8f90a537"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>S</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>S</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>S</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>S</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenAziItem>
-<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="1628444d-f25c-48ef-911e-3567f739c016"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>SSW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>SSW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>SSW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>SSW</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenAziItem>
-<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="168b3373-b558-42f8-a3ae-db9148a80660"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>ESE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>OSO</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>ESE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>ESE</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenAziItem>
-<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="b40bc717-9372-47b1-88ad-d2845c210341"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>SE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>SO</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>SE</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>SE</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenAziItem>
-<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="24294071-aea8-417f-aa18-d1296da66142"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>NNW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>NNW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>NNW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>NNW</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenAziItem>
-<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="cbd0c7db-f003-4686-9a8e-1c00cc96af36"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>W</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>W</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>W</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>W</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenAziItem>
-<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="540d43c6-c1d2-4a0b-861e-697cda4fb522"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>WNW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>WNW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>WNW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>WNW</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenAziItem>
-<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="d3db4ffa-c481-4d9c-a573-8c9023fbe4f2"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>NW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>NW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>NW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>NW</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenAziItem>
-<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="737d4278-54cf-4c5c-996a-4ac551333f1d"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>SW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>SW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>SW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>SW</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenAziItem>
-<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="199060a6-f2ab-414f-aa2e-141eec159c97"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>WSW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>WSW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>WSW</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>WSW</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenAziItem>
-<FaultsCatalogues_V1.Catalogues.FOGenDipItem TID="e74d9de0-86da-46e9-adc5-9dbddd34f92a"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>horizontal (0-9°)</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>horizontal (0-9°)</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>horizontal (0-9°)</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>horizontal (0-9°)</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenDipItem>
-<FaultsCatalogues_V1.Catalogues.FOGenDipItem TID="5e81e263-9ec7-4d46-903e-7b40c688471b"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>flat (10-44°)</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>flach (10-44°)</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>plat (10-44°)</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>flat (10-44°)</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenDipItem>
-<FaultsCatalogues_V1.Catalogues.FOGenDipItem TID="e8dd1d1f-9562-4b0e-9993-84f0d7678f9a"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>steep (45-79°)</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>steil (45-79°)</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>raide (45-79°)</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>steep (45-79°)</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenDipItem>
-<FaultsCatalogues_V1.Catalogues.FOGenDipItem TID="763f1978-e6e6-46d8-bcdc-5513f7f9c443"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>vertical (80-90°)</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>vertikal (80-90°)</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>vertical (80-90°)</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>vertical (80-90°)</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOGenDipItem>
-<FaultsCatalogues_V1.Catalogues.FOLinKindItem TID="0c46da43-9614-48c6-b02a-98103942f9f0"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>riddge and grooves</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Grate und Rillen</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>arêtes et rainures</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>riddge and grooves</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOLinKindItem>
-<FaultsCatalogues_V1.Catalogues.FOLinKindItem TID="b349b7a6-8107-4ffe-8b39-8ac8b95b3d26"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>linearly undifferenciated</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>linear undifferenziert</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>indifférencié linéairement</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>linearly undifferenciated</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOLinKindItem>
-<FaultsCatalogues_V1.Catalogues.FOLinKindItem TID="fe937206-4b6f-4dcc-92bd-7c44f7e95a2a"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>striation</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Striemung</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>striation</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>striation</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOLinKindItem>
-<FaultsCatalogues_V1.Catalogues.FOLinKindItem TID="e1ce1f70-4222-46ba-a059-c4f9b6bbb279"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>slickenslide / slickenfibres</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Rutschharnisch</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>tectoglyphe</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>slickenslide / slickenfibres</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOLinKindItem>
-<FaultsCatalogues_V1.Catalogues.FOOffIndItem TID="a3f8e36e-70bb-47c5-825d-891233f899f4"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>linear</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>linear</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>linéaire</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>linear</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOOffIndItem>
-<FaultsCatalogues_V1.Catalogues.FOOffIndItem TID="de2133b4-0763-4e99-a7d0-00ac114583af"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>seismic activity</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>seismische Aktivität</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>activité sismique</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>seismic activity</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOOffIndItem>
-<FaultsCatalogues_V1.Catalogues.FOOffIndItem TID="2ad936f7-396b-4a4e-ae16-912c098d3880"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>offset of geological units</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Versatz der geologischen Einheiten</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>décalage des unités géologiques</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>offset of geological units</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOOffIndItem>
-<FaultsCatalogues_V1.Catalogues.FOOffKindItem TID="cf0437d6-4bd0-4018-8b5a-a83cd46df717"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>real</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>wirklich</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>vrai</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>real</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOOffKindItem>
-<FaultsCatalogues_V1.Catalogues.FOOffKindItem TID="0eed7d10-5b0f-4580-90ec-ea962a856516"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>seeming</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>scheinbar</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>apparent</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>seeming</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOOffKindItem>
-<FaultsCatalogues_V1.Catalogues.FOReactKindItem TID="8902a801-3b56-445c-b486-c1a32f2588cb"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>complex fault</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>komplexe Störung</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>faille complexe</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>complex fault</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOReactKindItem>
-<FaultsCatalogues_V1.Catalogues.FOReactKindItem TID="7d8b09ba-929d-46ec-b348-52e6e86b3833"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>normal fault</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Abschiebung</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>faille normale </Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>normal fault</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOReactKindItem>
-<FaultsCatalogues_V1.Catalogues.FOReactKindItem TID="cad887cc-a352-4ce5-a1b4-5bf2efded091"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>strike-slip fault</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Blattverschiebung</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>décrochement</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>strike-slip fault</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOReactKindItem>
-<FaultsCatalogues_V1.Catalogues.FOReactKindItem TID="301727d1-ea86-474f-a130-0d40f7ae0928"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>overthrust</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Überschiebung</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>chevauchement</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>overthrust</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOReactKindItem>
-<FaultsCatalogues_V1.Catalogues.FOReactKindItem TID="9ecc46d7-19cc-41c8-8e16-6e6bdd6fa6f7"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>reverse fault</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Aufschiebung</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>faille inverse</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>reverse fault</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOReactKindItem>
-<FaultsCatalogues_V1.Catalogues.FOQuatActItem TID="812a2c14-86c2-40fd-8025-1351b319f235"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>offset of the moraine </Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Versatz in der Moräne</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>décalage de la moraine</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>offset of the moraine</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOQuatActItem>
-<FaultsCatalogues_V1.Catalogues.FONeotLinKindItem TID="f40878b2-eaf6-4db6-bbc7-bfa0f5be5f18"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>riddge and grooves</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Grate und Rillen </Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>arêtes et rainures</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>riddge and grooves</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FONeotLinKindItem>
-<FaultsCatalogues_V1.Catalogues.FONeotLinKindItem TID="b2f4299c-f639-45ca-8eaa-307033ee0c10"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>slickenslide / slickenfibres</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Rutschharnisch</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>tectoglyphe</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>slickenslide / slickenfibres</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FONeotLinKindItem>
-<FaultsCatalogues_V1.Catalogues.FONeotLinKindItem TID="33cb2876-4ce7-412c-8b7c-54835f4824c6"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>striation</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Striemung</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>striation</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>striation</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FONeotLinKindItem>
-<FaultsCatalogues_V1.Catalogues.FONeotLinKindItem TID="666c5730-5e84-4723-946f-84e16e1a0e6b"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>linearly undifferenciated</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>linear undifferenziert</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>indifférencié linéairement</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>linearly undifferenciated</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FONeotLinKindItem>
-<FaultsCatalogues_V1.Catalogues.FONeotLinKindItem TID="f329261d-33fc-4f92-9134-014413b671ca"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>offset of the moraine</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Versatz in der Moräne</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>décalage de la moraine</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>offset in the moraine</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FONeotLinKindItem>
-<FaultsCatalogues_V1.Catalogues.FOCompEdiItem TID="1d5c0645-dbe6-4b24-9ad0-4c8311e1cf8d"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Yohualli Muñoz</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Yohualli Muñoz</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Yohualli Muñoz</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Yohualli Muñoz</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOCompEdiItem>
-<FaultsCatalogues_V1.Catalogues.FOCompEdiItem TID="dee1433f-f075-4eb0-87c4-8fc8e36325ee"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Sandro Truttmann</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Sandro Truttmann</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Sandro Truttmann</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Sandro Truttmann</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOCompEdiItem>
-<FaultsCatalogues_V1.Catalogues.FOCompEdiItem TID="4c8b2de7-0353-464a-aa6b-dedc4ebd321b"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Sandra Borderie</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Sandra Borderie</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Sandra Borderie</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Sandra Borderie</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOCompEdiItem>
-<FaultsCatalogues_V1.Catalogues.FOCompEdiItem TID="2e41793d-0948-4ed4-9eac-52e2e68156d6"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Adeline Marro</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Adeline Marro</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Adeline Marro</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Adeline Marro</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOCompEdiItem>
-<FaultsCatalogues_V1.Catalogues.FOCompEdiItem TID="ba5ab01e-494d-40b9-9e76-58273c7ca80d"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Omar Radaideh</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Omar Radaideh</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Omar Radaideh</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Omar Radaideh</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOCompEdiItem>
-<FaultsCatalogues_V1.Catalogues.FOCompContriItem TID="7ec04ad5-a867-462c-a69a-1d8ba5b09764"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Sandro Truttmann</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Sandro Truttmann</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Sandro Truttmann</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Sandro Truttmann</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOCompContriItem>
-<FaultsCatalogues_V1.Catalogues.FOCompContriItem TID="51c311fd-8c3b-42d2-a94f-e1e30b30bd8a"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Yohualli Muñoz</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Yohualli Muñoz</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Yohualli Muñoz</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Yohualli Muñoz</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOCompContriItem>
-<FaultsCatalogues_V1.Catalogues.FOCompContriItem TID="f1e9f75b-1c9d-42f0-bf3f-d61a775b5356"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Sandra Borderie</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Sandra Borderie</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Sandra Borderie</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Sandra Borderie</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOCompContriItem>
-<FaultsCatalogues_V1.Catalogues.FOCompContriItem TID="9b4c491b-432f-4f6e-8747-50a7fb2181d6"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Adeline Marro</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Adeline Marro</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Adeline Marro</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Adeline Marro</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOCompContriItem>
-<FaultsCatalogues_V1.Catalogues.FOCompContriItem TID="53c8a9bc-0c37-44ce-bc8a-e068856ef42e"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Omar Radaideh</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Omar Radaideh</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Omar Radaideh</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Omar Radaideh</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOCompContriItem>
-<FaultsCatalogues_V1.Catalogues.FOCompControItem TID="756f448f-46a8-4df5-a34a-567a4dda95e0"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Omar Radaideh</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Omar Radaideh</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Omar Radaideh</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Omar Radaideh</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOCompControItem>
-<FaultsCatalogues_V1.Catalogues.FOCompControItem TID="f621ae30-d296-41ff-8e00-747cce80f234"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Adeline Marro</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Adeline Marro</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Adeline Marro</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Adeline Marro</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOCompControItem>
-<FaultsCatalogues_V1.Catalogues.FOCompControItem TID="7c27f060-9fd4-499f-9ec5-730ac6fffa09"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Sandro Truttmann</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Sandro Truttmann</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Sandro Truttmann</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Sandro Truttmann</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOCompControItem>
-<FaultsCatalogues_V1.Catalogues.FOCompControItem TID="22e1d36c-5d2e-4200-b35f-f243e959a199"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Sandra Borderie</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Sandra Borderie</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Sandra Borderie</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Sandra Borderie</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOCompControItem>
-<FaultsCatalogues_V1.Catalogues.FOCompControItem TID="f01c8a58-d147-4c49-ac28-a378ef784a4a"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>Yohualli Muñoz</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>Yohualli Muñoz</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>Yohualli Muñoz</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>Yohualli Muñoz</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOCompControItem>
-<FaultsCatalogues_V1.Catalogues.FOCompDelItem TID="6567d53c-f27e-4c16-a460-17c43ea57232"><IsSuperItem>false</IsSuperItem><IsUseable>true</IsUseable><Name><LocalisationCH_V1.MultilingualText><LocalisedText><LocalisationCH_V1.LocalisedText><Text>deleted</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>de</Language><Text>gelöscht</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>fr</Language><Text>effacé</Text></LocalisationCH_V1.LocalisedText><LocalisationCH_V1.LocalisedText><Language>en</Language><Text>deleted</Text></LocalisationCH_V1.LocalisedText></LocalisedText></LocalisationCH_V1.MultilingualText></Name></FaultsCatalogues_V1.Catalogues.FOCompDelItem>
-</FaultsCatalogues_V1.Catalogues>
-</DATASECTION>
+<?xml version="1.0" encoding="UTF-8"?>
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+	<HEADERSECTION SENDER="ili2gpkg-4.6.1-63db90def1260a503f0f2d4cb846686cd4851184" VERSION="2.3">
+		<MODELS>
+			<MODEL NAME="CatalogueObjectTrees_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
+			<MODEL NAME="CatalogueObjects_V1" VERSION="2011-08-30" URI="http://www.geo.admin.ch"/>
+			<MODEL NAME="FaultsCatalogues_V1" VERSION="2022-01-24" URI="mailto:U80863546@localhost"/>
+		</MODELS>
+	</HEADERSECTION>
+	<DATASECTION>
+		<FaultsCatalogues_V1.Catalogues BID="613a7adc-0ab6-482e-800d-875590d88868">
+			<FaultsCatalogues_V1.Catalogues.FaultHierItem TID="ef1db8ba-084a-447e-a1c1-3bb351b2b076">
+				<IsSuperItem>true</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>14911001</GeolCode>
+				<ConstraintRef>fault</ConstraintRef>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Störung</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>faille</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FaultHierItem>
+			<FaultsCatalogues_V1.Catalogues.FaultHierItem TID="38dfc433-5f3e-450c-aabf-d56a933df98c">
+				<IsSuperItem>true</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>14911002</GeolCode>
+				<ConstraintRef>subfault system</ConstraintRef>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>subfault system</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Teilstörungsstystem</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>système de faille partiel</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>subfault system</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FaultHierItem>
+			<FaultsCatalogues_V1.Catalogues.FaultHierItem TID="4d07147c-e48a-4aa8-ae61-be5c648330a8">
+				<IsSuperItem>true</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>14911003</GeolCode>
+				<ConstraintRef>large-scale fault system</ConstraintRef>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>large-scale fault system</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Grossstörungssystem</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>système de faille majeur</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>large-scale fault system</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FaultHierItem>
+			<FaultsCatalogues_V1.Catalogues.FOKindItem TID="fc9fac4e-4363-42b0-8df8-9262dfdedb1c">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>14901005</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>reverse fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Aufschiebung</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>faille inverse</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>reverse fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOKindItem TID="f68c3083-0649-4981-afd5-e69aa3c51aa6">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>14901001</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>overthrust</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Überschiebung</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>chevauchement</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>overthrust</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOKindItem TID="b5003bac-252d-471a-83e2-5290e194b202">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>14901006</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>strike-slip fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Blattverschiebung</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>décrochement</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>strike-slip fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOKindItem TID="c9200634-6a6f-41af-b2bd-266cf28bf614">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>14901002</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>normal fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Abschiebung </Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>faille normale </Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>normal fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOKindItem TID="3c5b3976-f725-40ec-b708-0e2c061382c4">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>14901007</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>complex fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>komplexe Störung </Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>faille complexe</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>complex fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOKindItem TID="d97e6aa8-b38d-4f92-b910-db1e869e6bd4">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>14901008</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>general fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Störung im Allgemeinen</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>faille générale</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>general fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOVertMovItem TID="f95d5658-836c-4776-b48e-53b9ab2a153d">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>14903001</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>inverted</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>aufschiebend</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>inverse</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>inverted</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOVertMovItem>
+			<FaultsCatalogues_V1.Catalogues.FOVertMovItem TID="d2b1f796-507c-4544-ba4f-b03e64a4b64a">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>9999997</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>unknown</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>unbekannt</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>inconnu</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>unknown</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOVertMovItem>
+			<FaultsCatalogues_V1.Catalogues.FOVertMovItem TID="210f86e3-fdeb-453d-adfa-c2ee3dabcc3d">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>14903002</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>normal</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>abschiebend</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>normale</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>normal</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOVertMovItem>
+			<FaultsCatalogues_V1.Catalogues.FOVertMovItem TID="2b03daa8-22a7-4520-8f1c-1d28b8f681e6">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>9999998</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>non-existent / negligible</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>nicht vorhanden / vernachlässigbar</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>inexistant / négligeable</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>non-existent / negligible</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOVertMovItem>
+			<FaultsCatalogues_V1.Catalogues.FOHoriMovItem TID="be8464e9-382d-4a0f-8638-d4751bd9712e">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>1490402</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>sinistral</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>sinistral</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>sénestre</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>sinistral</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOHoriMovItem>
+			<FaultsCatalogues_V1.Catalogues.FOHoriMovItem TID="87e2b570-85f0-4e98-93a6-0ffe156753b2">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>9999998</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>non-existent / négligible</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>nicht vorhanden / vernachlässigbar</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>inexistant / négligeable</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>non-existent / négligible</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOHoriMovItem>
+			<FaultsCatalogues_V1.Catalogues.FOHoriMovItem TID="35673a38-ea22-4925-a6a8-e44dc74f5600">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>14904001</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>dextral</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>dextral</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>dextre</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>dextral</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOHoriMovItem>
+			<FaultsCatalogues_V1.Catalogues.FOHoriMovItem TID="f5b0c743-9500-4e8d-9d2b-79039986fac4">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>9999997</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>unknown</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>unbekannt</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>inconnu</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>unknown</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOHoriMovItem>
+			<FaultsCatalogues_V1.Catalogues.FOLimTecBodyItem TID="cf67dce2-306e-4ebc-a9ed-7a3cf16ca844">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>14910001</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>limiting nappes</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Decken trennend</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>limitant des nappes</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>limiting nappes</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOLimTecBodyItem>
+			<FaultsCatalogues_V1.Catalogues.FOLimTecBodyItem TID="f8c46dcd-6fd5-4ad8-a826-251d8af04b5a">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>14910002</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>limiting imbricates</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Schuppen trennend</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>limitant des écailles</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>limiting imbricates</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOLimTecBodyItem>
+			<FaultsCatalogues_V1.Catalogues.FOIdentItem TID="c65c3ab9-d039-4450-8d36-80bd96d4805f">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>cartography</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Kartierung</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>cartographie</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>cartography</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOIdentItem>
+			<FaultsCatalogues_V1.Catalogues.FOIdentItem TID="cfffb8ee-d4d1-4955-a3c0-91e8f25e677a">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>seismology</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Seismik</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>sismologie</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>seismology</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOIdentItem>
+			<FaultsCatalogues_V1.Catalogues.FOIdentItem TID="53cebe01-207a-42e9-989f-756804ab5a51">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>borehole</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Bohrung</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>forage</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>borehole</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOIdentItem>
+			<FaultsCatalogues_V1.Catalogues.FOIdentItem TID="7f788dca-e872-4864-8345-121e3d51d3d7">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>field measurement</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Feldmessung</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>mesure de terrain</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>field measurement</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOIdentItem>
+			<FaultsCatalogues_V1.Catalogues.FOIdentItem TID="3e74e5b1-c143-4993-8e39-31a6b0ef804a">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>geological cross-sections</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>geologische Profile</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>coupes géologiques</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>geological cross-sections</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOIdentItem>
+			<FaultsCatalogues_V1.Catalogues.FOIdentItem TID="71c4bc35-ad21-4566-bf08-7ef019cd6dae">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Remote Sensing</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Remote Sensing</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Remote Sensing</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Remote Sensing</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOIdentItem>
+			<FaultsCatalogues_V1.Catalogues.FOIdentItem TID="3c87b6cf-21b3-4c85-b960-c057175dfa75">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>modelling</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Modellierung</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>modélisation</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>modelling</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOIdentItem>
+			<FaultsCatalogues_V1.Catalogues.FOIDRelItem TID="0e56e258-9f49-477d-a627-ee79d1d01b5a">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>calculated / modelled</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>berechnet / modelliert</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>calculé / modellé</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>calculated / modelled</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOIDRelItem>
+			<FaultsCatalogues_V1.Catalogues.FOIDRelItem TID="3265186a-a9f4-45da-8a24-99cda9d83f54">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>conceptual</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>konzeptuell</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>conceptuel</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>conceptual</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOIDRelItem>
+			<FaultsCatalogues_V1.Catalogues.FOIDRelItem TID="d1d2c8c6-8a4c-402e-944a-1f7ec4d385cb">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>14906001</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>assured</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>gesichert</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>certain</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>assured</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOIDRelItem>
+			<FaultsCatalogues_V1.Catalogues.FOIDRelItem TID="a498e51b-1f22-4bae-acde-1026cfcad291">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>14906003</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>supposed</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>vermutet</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>probable</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>supposed</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOIDRelItem>
+			<FaultsCatalogues_V1.Catalogues.FOIDRelItem TID="670fa7ec-3344-40e7-ae41-4aa074fb0bf2">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<GeolCode>9999997</GeolCode>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>unknown</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>unbekannt</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>inconnu</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>unknown</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOIDRelItem>
+			<FaultsCatalogues_V1.Catalogues.FORefItem TID="dc2e74fd-3edd-40a6-8004-0ebff6eca6e9">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>swisstopo</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>swisstopo</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>swisstopo</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>swisstopo</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FORefItem>
+			<FaultsCatalogues_V1.Catalogues.FORefItem TID="43053c41-2545-42b9-9eaf-7c4661897cd0">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>University of Berne</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Universität Bern</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Université de Berne</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>University of Berne</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FORefItem>
+			<FaultsCatalogues_V1.Catalogues.FORefItem TID="30bba65c-0e34-4679-a5c2-7d8d9712e031">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>University of Fribourg</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Universität Freiburg</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Université de Fribourg</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>University of Fribourg</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FORefItem>
+			<FaultsCatalogues_V1.Catalogues.FORefItem TID="867903b3-216f-483b-aa6d-75f8753d4b49">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Pfiffner et al. (2017)</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Pfiffner et al. (2017)</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Pfiffner et al. (2017)</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Pfiffner et al. (2017)</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FORefItem>
+			<FaultsCatalogues_V1.Catalogues.FODBItem TID="be69b2d9-4b6e-4148-831c-56b430800829">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>GeoCover</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>GeoCover</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>GeoCover</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>GeoCover</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FODBItem>
+			<FaultsCatalogues_V1.Catalogues.FODBItem TID="e5b1d7ad-d1bd-4f67-b03a-b30b50abc89a">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>GeoMol</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>GeoMol</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>GeoMol</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>GeoMol</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FODBItem>
+			<FaultsCatalogues_V1.Catalogues.FODBItem TID="9ef22cd7-d932-4b87-b489-b4c194d1b64d">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>BDMS</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>BDMS</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>BDMS</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>BDMS</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FODBItem>
+			<FaultsCatalogues_V1.Catalogues.FODBItem TID="29122197-becc-4900-9a78-e5eceb0e5c67">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>initial data acquisition</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Ersterfassung</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>acquisition initiale</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>initial data acquisition</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FODBItem>
+			<FaultsCatalogues_V1.Catalogues.FODBItem TID="17461bc0-1640-4108-adc2-366b10624621">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>SeismoTeCH Atlas</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>SeismoTeCH Atlas</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Atlas SeismoTeCH </Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>SeismoTeCH Atlas</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FODBItem>
+			<FaultsCatalogues_V1.Catalogues.FODBItem TID="dca81400-7ac8-4c7d-85f7-9e774b62a7d5">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Tectonic Atlas</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Tektonischer Atlas</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Atlas tectonique</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Tectonic Atlas</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FODBItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenStrItem TID="7dfb77b2-cf30-4ceb-a7fe-0d4be13fc036">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>NE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>NO</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>NE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>NE</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenStrItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenStrItem TID="cbe82551-5812-418e-895d-da07719af570">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>SSE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>SSO</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>SSE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>SSE</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenStrItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenStrItem TID="0bb1fdb3-9f54-4101-ba47-43fab9e0fa2e">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>ESE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>OSO</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>ESE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>ESE</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenStrItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenStrItem TID="3da170a2-2bfd-49db-9384-3496378e14b0">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>SE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>SO</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>SE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>SE</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenStrItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenStrItem TID="4d077832-ff12-43b8-bc26-4ea9e301a12a">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>N</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>N</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>N</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>N</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenStrItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenStrItem TID="07967c7e-d82b-4e42-9ee6-51ae874dabb8">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>NNE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>NNO</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>NNE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>NNE</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenStrItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenStrItem TID="18b2830b-2140-48ff-98d7-c0c968856523">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>ENE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>ONO</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>ENE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>ENE</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenStrItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenStrItem TID="bfeb3eef-b8f0-4658-83d2-a6ea934f00e6">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>E</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>O</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>E</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>E</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenStrItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="3cbdd916-701c-4765-9987-5b05cbedf3ca">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>N</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>N</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>N</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>N</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="f8c83bfa-264e-43aa-aac9-a51bf3df9836">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>ENE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>ONO</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>ENE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>ENE</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="4a1c6418-cf1a-4bf9-b360-a78a0f884121">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>E</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>O</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>E</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>E</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="af36e35b-1f3b-4e76-a8af-c8efcfb9ff87">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>NNE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>NNO</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>NNE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>NNE</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="d70f0ca6-aa4b-4e00-a7c4-e4c8aa8f6322">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>NE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>NO</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>NE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>NE</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="d25bb3ec-0190-4247-95a9-ad5f8f90a537">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>S</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>S</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>S</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>S</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="1628444d-f25c-48ef-911e-3567f739c016">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>SSW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>SSW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>SSW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>SSW</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="168b3373-b558-42f8-a3ae-db9148a80660">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>ESE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>OSO</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>ESE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>ESE</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="b40bc717-9372-47b1-88ad-d2845c210341">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>SE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>SO</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>SE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>SE</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="24294071-aea8-417f-aa18-d1296da66142">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>NNW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>NNW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>NNW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>NNW</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="cbd0c7db-f003-4686-9a8e-1c00cc96af36">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>W</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>W</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>W</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>W</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="540d43c6-c1d2-4a0b-861e-697cda4fb522">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>WNW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>WNW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>WNW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>WNW</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="d3db4ffa-c481-4d9c-a573-8c9023fbe4f2">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>NW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>NW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>NW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>NW</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="737d4278-54cf-4c5c-996a-4ac551333f1d">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>SW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>SW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>SW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>SW</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="199060a6-f2ab-414f-aa2e-141eec159c97">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>WSW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>WSW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>WSW</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>WSW</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenDipItem TID="e74d9de0-86da-46e9-adc5-9dbddd34f92a">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>horizontal (0-9°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>horizontal (0-9°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>horizontal (0-9°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>horizontal (0-9°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenDipItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenDipItem TID="5e81e263-9ec7-4d46-903e-7b40c688471b">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>flat (10-44°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>flach (10-44°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>plat (10-44°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>flat (10-44°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenDipItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenDipItem TID="e8dd1d1f-9562-4b0e-9993-84f0d7678f9a">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>steep (45-79°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>steil (45-79°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>raide (45-79°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>steep (45-79°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenDipItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenDipItem TID="763f1978-e6e6-46d8-bcdc-5513f7f9c443">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>vertical (80-90°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>vertikal (80-90°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>vertical (80-90°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>vertical (80-90°)</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenDipItem>
+			<FaultsCatalogues_V1.Catalogues.FOLinKindItem TID="0c46da43-9614-48c6-b02a-98103942f9f0">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>riddge and grooves</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Grate und Rillen</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>arêtes et rainures</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>riddge and grooves</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOLinKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOLinKindItem TID="b349b7a6-8107-4ffe-8b39-8ac8b95b3d26">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>linearly undifferenciated</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>linear undifferenziert</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>indifférencié linéairement</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>linearly undifferenciated</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOLinKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOLinKindItem TID="fe937206-4b6f-4dcc-92bd-7c44f7e95a2a">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>striation</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Striemung</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>striation</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>striation</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOLinKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOLinKindItem TID="e1ce1f70-4222-46ba-a059-c4f9b6bbb279">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>slickenslide / slickenfibres</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Rutschharnisch</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>tectoglyphe</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>slickenslide / slickenfibres</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOLinKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOOffIndItem TID="a3f8e36e-70bb-47c5-825d-891233f899f4">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>linear</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>linear</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>linéaire</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>linear</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOOffIndItem>
+			<FaultsCatalogues_V1.Catalogues.FOOffIndItem TID="de2133b4-0763-4e99-a7d0-00ac114583af">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>seismic activity</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>seismische Aktivität</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>activité sismique</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>seismic activity</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOOffIndItem>
+			<FaultsCatalogues_V1.Catalogues.FOOffIndItem TID="2ad936f7-396b-4a4e-ae16-912c098d3880">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>offset of geological units</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Versatz der geologischen Einheiten</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>décalage des unités géologiques</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>offset of geological units</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOOffIndItem>
+			<FaultsCatalogues_V1.Catalogues.FOOffKindItem TID="cf0437d6-4bd0-4018-8b5a-a83cd46df717">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>real</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>wirklich</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>vrai</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>real</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOOffKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOOffKindItem TID="0eed7d10-5b0f-4580-90ec-ea962a856516">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>seeming</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>scheinbar</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>apparent</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>seeming</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOOffKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOReactKindItem TID="8902a801-3b56-445c-b486-c1a32f2588cb">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>complex fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>komplexe Störung</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>faille complexe</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>complex fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOReactKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOReactKindItem TID="7d8b09ba-929d-46ec-b348-52e6e86b3833">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>normal fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Abschiebung</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>faille normale </Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>normal fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOReactKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOReactKindItem TID="cad887cc-a352-4ce5-a1b4-5bf2efded091">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>strike-slip fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Blattverschiebung</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>décrochement</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>strike-slip fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOReactKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOReactKindItem TID="301727d1-ea86-474f-a130-0d40f7ae0928">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>overthrust</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Überschiebung</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>chevauchement</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>overthrust</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOReactKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOReactKindItem TID="9ecc46d7-19cc-41c8-8e16-6e6bdd6fa6f7">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>reverse fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Aufschiebung</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>faille inverse</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>reverse fault</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOReactKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOQuatActItem TID="812a2c14-86c2-40fd-8025-1351b319f235">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>offset of the moraine </Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Versatz in der Moräne</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>décalage de la moraine</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>offset of the moraine</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOQuatActItem>
+			<FaultsCatalogues_V1.Catalogues.FONeotLinKindItem TID="f40878b2-eaf6-4db6-bbc7-bfa0f5be5f18">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>riddge and grooves</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Grate und Rillen </Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>arêtes et rainures</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>riddge and grooves</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FONeotLinKindItem>
+			<FaultsCatalogues_V1.Catalogues.FONeotLinKindItem TID="b2f4299c-f639-45ca-8eaa-307033ee0c10">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>slickenslide / slickenfibres</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Rutschharnisch</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>tectoglyphe</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>slickenslide / slickenfibres</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FONeotLinKindItem>
+			<FaultsCatalogues_V1.Catalogues.FONeotLinKindItem TID="33cb2876-4ce7-412c-8b7c-54835f4824c6">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>striation</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Striemung</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>striation</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>striation</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FONeotLinKindItem>
+			<FaultsCatalogues_V1.Catalogues.FONeotLinKindItem TID="666c5730-5e84-4723-946f-84e16e1a0e6b">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>linearly undifferenciated</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>linear undifferenziert</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>indifférencié linéairement</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>linearly undifferenciated</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FONeotLinKindItem>
+			<FaultsCatalogues_V1.Catalogues.FONeotLinKindItem TID="f329261d-33fc-4f92-9134-014413b671ca">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>offset of the moraine</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Versatz in der Moräne</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>décalage de la moraine</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>offset in the moraine</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FONeotLinKindItem>
+			<FaultsCatalogues_V1.Catalogues.FOCompEdiItem TID="1d5c0645-dbe6-4b24-9ad0-4c8311e1cf8d">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Yohualli Muñoz</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Yohualli Muñoz</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Yohualli Muñoz</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Yohualli Muñoz</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOCompEdiItem>
+			<FaultsCatalogues_V1.Catalogues.FOCompEdiItem TID="dee1433f-f075-4eb0-87c4-8fc8e36325ee">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Sandro Truttmann</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Sandro Truttmann</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Sandro Truttmann</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Sandro Truttmann</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOCompEdiItem>
+			<FaultsCatalogues_V1.Catalogues.FOCompEdiItem TID="4c8b2de7-0353-464a-aa6b-dedc4ebd321b">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Sandra Borderie</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Sandra Borderie</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Sandra Borderie</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Sandra Borderie</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOCompEdiItem>
+			<FaultsCatalogues_V1.Catalogues.FOCompEdiItem TID="2e41793d-0948-4ed4-9eac-52e2e68156d6">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Adeline Marro</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Adeline Marro</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Adeline Marro</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Adeline Marro</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOCompEdiItem>
+			<FaultsCatalogues_V1.Catalogues.FOCompEdiItem TID="ba5ab01e-494d-40b9-9e76-58273c7ca80d">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Omar Radaideh</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Omar Radaideh</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Omar Radaideh</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Omar Radaideh</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOCompEdiItem>
+			<FaultsCatalogues_V1.Catalogues.FOCompContriItem TID="7ec04ad5-a867-462c-a69a-1d8ba5b09764">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Sandro Truttmann</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Sandro Truttmann</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Sandro Truttmann</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Sandro Truttmann</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOCompContriItem>
+			<FaultsCatalogues_V1.Catalogues.FOCompContriItem TID="51c311fd-8c3b-42d2-a94f-e1e30b30bd8a">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Yohualli Muñoz</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Yohualli Muñoz</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Yohualli Muñoz</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Yohualli Muñoz</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOCompContriItem>
+			<FaultsCatalogues_V1.Catalogues.FOCompContriItem TID="f1e9f75b-1c9d-42f0-bf3f-d61a775b5356">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Sandra Borderie</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Sandra Borderie</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Sandra Borderie</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Sandra Borderie</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOCompContriItem>
+			<FaultsCatalogues_V1.Catalogues.FOCompContriItem TID="9b4c491b-432f-4f6e-8747-50a7fb2181d6">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Adeline Marro</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Adeline Marro</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Adeline Marro</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Adeline Marro</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOCompContriItem>
+			<FaultsCatalogues_V1.Catalogues.FOCompContriItem TID="53c8a9bc-0c37-44ce-bc8a-e068856ef42e">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Omar Radaideh</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Omar Radaideh</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Omar Radaideh</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Omar Radaideh</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOCompContriItem>
+			<FaultsCatalogues_V1.Catalogues.FOCompControItem TID="756f448f-46a8-4df5-a34a-567a4dda95e0">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Omar Radaideh</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Omar Radaideh</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Omar Radaideh</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Omar Radaideh</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOCompControItem>
+			<FaultsCatalogues_V1.Catalogues.FOCompControItem TID="f621ae30-d296-41ff-8e00-747cce80f234">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Adeline Marro</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Adeline Marro</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Adeline Marro</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Adeline Marro</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOCompControItem>
+			<FaultsCatalogues_V1.Catalogues.FOCompControItem TID="7c27f060-9fd4-499f-9ec5-730ac6fffa09">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Sandro Truttmann</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Sandro Truttmann</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Sandro Truttmann</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Sandro Truttmann</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOCompControItem>
+			<FaultsCatalogues_V1.Catalogues.FOCompControItem TID="22e1d36c-5d2e-4200-b35f-f243e959a199">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Sandra Borderie</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Sandra Borderie</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Sandra Borderie</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Sandra Borderie</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOCompControItem>
+			<FaultsCatalogues_V1.Catalogues.FOCompControItem TID="f01c8a58-d147-4c49-ac28-a378ef784a4a">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>Yohualli Muñoz</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>Yohualli Muñoz</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>Yohualli Muñoz</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>Yohualli Muñoz</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOCompControItem>
+			<FaultsCatalogues_V1.Catalogues.FOCompDelItem TID="6567d53c-f27e-4c16-a460-17c43ea57232">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>deleted</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>gelöscht</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>effacé</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>deleted</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOCompDelItem>
+		</FaultsCatalogues_V1.Catalogues>
+	</DATASECTION>
 </TRANSFER>
