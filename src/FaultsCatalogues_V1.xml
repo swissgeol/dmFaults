@@ -1409,6 +1409,31 @@
 					</LocalisationCH_V1.MultilingualText>
 				</Name>
 			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
+			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="411f7fc9-1f38-4b94-a423-24d3709f8927">
+				<IsSuperItem>false</IsSuperItem>
+				<IsUseable>true</IsUseable>
+				<Name>
+					<LocalisationCH_V1.MultilingualText>
+						<LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Text>SSE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>de</Language>
+								<Text>SSO</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>fr</Language>
+								<Text>SSE</Text>
+							</LocalisationCH_V1.LocalisedText>
+							<LocalisationCH_V1.LocalisedText>
+								<Language>en</Language>
+								<Text>SSE</Text>
+							</LocalisationCH_V1.LocalisedText>
+						</LocalisedText>
+					</LocalisationCH_V1.MultilingualText>
+				</Name>
+			</FaultsCatalogues_V1.Catalogues.FOGenAziItem>
 			<FaultsCatalogues_V1.Catalogues.FOGenAziItem TID="1628444d-f25c-48ef-911e-3567f739c016">
 				<IsSuperItem>false</IsSuperItem>
 				<IsUseable>true</IsUseable>
