@@ -35,6 +35,15 @@ VERSION "2022-01-24"  =
   Line = POLYLINE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2;
   Surface = SURFACE WITH (STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS > 0.005;
 
+  STRUCTURE LineStructure =
+    Line : Line;
+  END LineStructure;
+
+  !!@ ili2db.mapping=MultiLine
+  STRUCTURE MultiLine =
+    Lines: BAG {1..*} OF LineStructure;
+  END MultiLine;
+
 
 !!****************************************
 !! TOPIC 
@@ -196,7 +205,13 @@ VERSION "2022-01-24"  =
 	  /** Indikatoren für die neotektonische Aktivität der Störung/des Störungssystems */
 	  Indicator_For_Quaternary_Activity : FaultsCatalogues_V1.Catalogues.FOQuatActRef; 
 	  
-	  /** Lineationstypen auf einer Störungsfläche, welche klar einer neotektonischen Aktivität zugeordnet werden können */
+	  /** Lineationstyp auf einer Störungsfläche, welche klar einer neotektonischen Aktivität zugeordnet werden können */
+	  Neotectonic_Lineation_Kind: FaultsCatalogues_V1.Catalogues.FONeotLinKindRef;
+	  
+	  /** Das Fallazimut (0-359°) eines Linears */	  
+	  Neotectonic_Lineation_Trend : 0.000 .. 359.999 [Units.Angle_Degree]; 	  
+	  
+	  /** Der Fallwinkel (0-90°) eines Linears gemessen in der Vertikalebene */
 	  Neotectonic_Lineation_Plunge : 0.000 .. 90.000 [Units.Angle_Degree]; 
 	  
 	  /** Maximale geschätzte Magnitude (z.B. aufgrund Bruchlänge */
@@ -206,16 +221,19 @@ VERSION "2022-01-24"  =
 	/** COMPILER ATTRIBUTES
 	  */
 	  /** Name(n) des/r  Bearbeitenden der Störung */  
-	  Editor : MANDATORY FaultsCatalogues_V1.Catalogues.FOCompEdiRef;
+	  Editor : MANDATORY TEXT;
 	   
 	  /** Name(n) des/r  Bearbeitenden der Störung */  
-	  Contributor : FaultsCatalogues_V1.Catalogues.FOCompContriRef;
+	  Contributor : TEXT;
 	  
 	  /** Name(n) des/r  Kontrollierenden der Störung */  
-	  Controller : FaultsCatalogues_V1.Catalogues.FOCompControRef;
+	  Controller : TEXT;
+	  
+	  /** Datum der Störungs-Erfassung */
+	  Creation_Date: INTERLIS.XMLDate;
 	  
 	  /** gelöschte Störung */  
-	  Deleted : FaultsCatalogues_V1.Catalogues.FOCompDelRef;
+	  /** Deleted : FaultsCatalogues_V1.Catalogues.FOCompDelRef; */
 	  
     END FaultObject; 
 
@@ -226,7 +244,7 @@ VERSION "2022-01-24"  =
 
     CLASS LineFaultObject
     EXTENDS FaultObject =
-      Geometry : MANDATORY Line;
+      Geometry : MANDATORY MultiLine;
     END LineFaultObject;
 
     CLASS SurfaceFaultObject
@@ -240,7 +258,7 @@ VERSION "2022-01-24"  =
 
 	ASSOCIATION FaultObject_Fault =
 	  FaultObject -- {0..*} FaultObject;
-      Fault -- {1} Fault;
+      Fault -- {0..1} Fault;
     END FaultObject_Fault;	
 	
 	/** Störungen, welche in Verbindung stehen (bspw. durch Hierarchy) 
@@ -250,8 +268,6 @@ VERSION "2022-01-24"  =
 	    ParentFault -- {0..1} Fault;
 		MANDATORY CONSTRAINT
 			ChildFault->Hierarchy->Reference->Code=="fault" AND ParentFault->Hierarchy->Reference->Code=="subfault system"
-			OR
-			ChildFault->Hierarchy->Reference->Code=="subfault system" AND ParentFault->Hierarchy->Reference->Code=="large-scale fault system"	
 			OR
 			ChildFault->Hierarchy->Reference->Code=="subfault system" AND ParentFault->Hierarchy->Reference->Code=="large-scale fault system";
 		

@@ -52,9 +52,7 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
       Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FaultHierItem;
     END FaultHierRef;
-	
-	
-	
+
 	
 	
 	/** CLASS FaultObject
@@ -325,64 +323,6 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
       Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FONeotLinKindItem;
     END FONeotLinKindRef;
 	
-
-	/** COMPILERS ATTRIBUTES
-	  */
-	/** Codelist für das Attribut FO.Editor = Name(n) des/r  Bearbeitenden der Störung
-    */
-	CLASS FOCompEdiItem
-    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Code : TEXT; 
-	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
-      Description : LocalisationCH_V1.MultilingualMText;
-    END FOCompEdiItem;
-	
-	STRUCTURE FOCompEdiRef
-    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOCompEdiItem;
-    END FOCompEdiRef;		
-	
-	/** Codelist für das Attribut FO.Editor = Name(n) des/r  Bearbeitenden der Störung
-    */
-	CLASS FOCompContriItem
-    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Code : TEXT; 
-	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
-      Description : LocalisationCH_V1.MultilingualMText;
-    END FOCompContriItem;
-	
-	STRUCTURE FOCompContriRef
-    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOCompContriItem;
-    END FOCompContriRef;			
-	
-	/** Codelist für das Attribut FO.Editor = Name(n) des/r  Kontrollierenden der Störung
-    */
-	CLASS FOCompControItem
-    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Code : TEXT; 
-	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
-      Description : LocalisationCH_V1.MultilingualMText;
-    END FOCompControItem;
-	
-	STRUCTURE FOCompControRef
-    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOCompControItem;
-    END FOCompControRef;				
-	
-	/** Codelist für das Attribut FO.Editor = gelöschte Störung
-    */
-	CLASS FOCompDelItem
-    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Code : TEXT; 
-	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
-      Description : LocalisationCH_V1.MultilingualMText;
-    END FOCompDelItem;
-	
-	STRUCTURE FOCompDelRef
-    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOCompDelItem;
-    END FOCompDelRef;	
 	
   END Catalogues;
   
