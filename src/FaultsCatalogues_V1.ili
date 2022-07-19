@@ -152,21 +152,7 @@ IMPORTS CatalogueObjectTrees_V1,LocalisationCH_V1;
     STRUCTURE FOIDRelRef
     EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
       Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FOIDRelItem;
-    END FOIDRelRef;
-	
-	/** Codelist für das Attribut FO.Reference = Verweis zur Datenherkunft
-    */	
-	CLASS FORefItem
-    EXTENDS CatalogueObjectTrees_V1.Catalogues.Item =
-      Code : TEXT; 
-	  Name : MANDATORY LocalisationCH_V1.MultilingualText;
-      Description : LocalisationCH_V1.MultilingualMText;
-    END FORefItem;
-
-    STRUCTURE FORefRef
-    EXTENDS CatalogueObjectTrees_V1.Catalogues.CatalogueReference =
-      Reference (EXTENDED) : REFERENCE TO (EXTERNAL) FORefItem;
-    END FORefRef;	
+    END FOIDRelRef;	
 	
 	/** Codelist für das Attribut FO.Database = Verweis zu einer bestehenden Datenbank (Bsp. BDMS)
     */	
